@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide exactamente en dos columnas iguales */
+    height: 100vh;
+    width: 100%;
+}
+
+.image-side {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    .image-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.content-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        grid-template-rows: 30vh 70vh; /* División de altura */
+    }
+}

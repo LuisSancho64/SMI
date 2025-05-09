@@ -1,0 +1,11 @@
+C:\Users\4ndre\source\repos\SMI\Shared\bin\Debug\net9.0\SMI.Shared.deps.json
+C:\Users\4ndre\source\repos\SMI\Shared\bin\Debug\net9.0\SMI.Shared.dll
+C:\Users\4ndre\source\repos\SMI\Shared\bin\Debug\net9.0\SMI.Shared.pdb
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.AssemblyInfoInputs.cache
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.AssemblyInfo.cs
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.dll
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\refint\SMI.Shared.dll
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\SMI.Shared.pdb
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net9.0\ref\SMI.Shared.dll

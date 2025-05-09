@@ -1,0 +1,111 @@
+﻿@page "/"
+@layout LoginLayout
+@using SMI.Shared.DTOs
+@using SMI.Shared.Interfaces
+@inject IAuthService AuthService
+@using System.ComponentModel.DataAnnotations
+@inject NavigationManager Navigation
+
+<PageTitle>Login</PageTitle>
+
+<div class="login-container">
+    <div class="card shadow">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Iniciar sesión</h3>
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">
+                    @errorMessage
+                </div>
+            }
+
+            <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="form-group mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <InputText id="correo" class="form-control" @bind-Value="loginModel.Correo" />
+                    <ValidationMessage For="@(() => loginModel.Correo)" class="text-danger" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="clave" class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <InputText id="clave" class="form-control" @bind-Value="loginModel.Clave" type="@passwordInputType" />
+                        <button type="button" class="btn btn-outline-secondary" @onclick="TogglePasswordVisibility">
+                            @(passwordInputType == "password" ? "Mostrar" : "Ocultar")
+                        </button>
+                    </div>
+                    <ValidationMessage For="@(() => loginModel.Clave)" class="text-danger" />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-container {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .card {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-primary {
+        background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+        border: none;
+        padding: 10px;
+    }
+
+    .text-danger {
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+    }
+</style>
+
+@code {
+    private LoginDTO loginModel = new();
+    private string passwordInputType = "password";
+    private string errorMessage = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        // Necesitamos asegurarnos de que LoginDTO tiene atributos de validación
+        // Suponiendo que ya tiene esos atributos, no es necesario añadir código aquí
+    }
+
+    private async Task HandleLogin()
+    {
+        // Validación manual adicional
+        if (string.IsNullOrWhiteSpace(loginModel.Correo) || string.IsNullOrWhiteSpace(loginModel.Clave))
+        {
+            errorMessage = "Por favor complete todos los campos.";
+            return;
+        }
+
+        // Intento de login
+        bool result = await AuthService.Login(loginModel);
+        if (result)
+        {
+            Navigation.NavigateTo("/home");
+        }
+        else
+        {
+            errorMessage = "Usuario no registrado o credenciales incorrectas.";
+        }
+    }
+
+    private void TogglePasswordVisibility()
+    {
+        passwordInputType = (passwordInputType == "password") ? "text" : "password";
+    }
+}

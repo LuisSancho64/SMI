@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SMI</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="SMI.Client.styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <div style="position:absolute; top:30vh; width:100%; text-align:center">
+            <h1>Sistema SMI</h1>
+            <p>La aplicación está cargando...</p>
+            <div style="display:flex; gap:10px; justify-content:center; align-items:center">
+                <div class="spinner-border" role="status"></div>
+                <span>Por favor espere...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            // Si después de 10 segundos seguimos viendo la pantalla de carga
+            setTimeout(function () {
+                if (document.getElementById('app').innerText.includes('cargando')) {
+                    console.error('Posible problema al cargar Blazor WebAssembly. Verifica la consola para más detalles.');
+                }
+            }, 10000);
+        });
+    </script>
+</body>
+</html>

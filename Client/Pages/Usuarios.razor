@@ -1,0 +1,212 @@
+﻿@page "/usuarios"
+@using SMI.Shared.Models
+@inject SMI.Client.Services.PersonaService UserService
+@inject IJSRuntime JS
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Personas</h3>
+        <button class="btn btn-success" @onclick="OpenCreateModal">
+            <i class="bi bi-plus-circle"></i> Crear Nueva Persona
+        </button>
+    </div>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Género</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (usuarios != null && usuarios.Count > 0)
+            {
+                @foreach (var usuario in UsuariosPaginados)
+                {
+                    <tr>
+                        <td>@usuario.nombre</td>
+                        <td>@usuario.apellido</td>
+                        <td>@MostrarGenero(usuario.id_Genero)</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-warning btn-sm" @onclick="() => OpenEditModal(usuario)">
+                                    <i class="bi bi-pencil-square"></i> Editar
+                                </button>
+                                <button class="btn btn-danger btn-sm" @onclick="() => DeleteUser(usuario.id)">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" class="text-center">No hay usuarios registrados.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (usuarios.Count > usuariosPorPagina)
+    {
+        <div class="d-flex justify-content-start align-items-center mt-3">
+            <nav>
+                <ul class="pagination mb-0">
+                    <li class="page-item @(paginaActual == 1 ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => CambiarPagina(1)">« Primero</button>
+                    </li>
+                    <li class="page-item @(paginaActual == 1 ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => CambiarPagina(paginaActual - 1)">‹ Anterior</button>
+                    </li>
+                    <li class="page-item disabled">
+                        <span class="page-link">Página @paginaActual de @totalPaginas</span>
+                    </li>
+                    <li class="page-item @(paginaActual == totalPaginas ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => CambiarPagina(paginaActual + 1)">Siguiente ›</button>
+                    </li>
+                    <li class="page-item @(paginaActual == totalPaginas ? "disabled" : "")">
+                        <button class="page-link" @onclick="() => CambiarPagina(totalPaginas)">Último »</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    }
+</div>
+
+<!-- Modal para Crear/Editar Usuario -->
+@if (showModal)
+{
+    <div class="modal show d-block" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@modalTitle</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input class="form-control" @bind="currentUser.nombre" placeholder="Ingrese el nombre" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Apellido</label>
+                        <input class="form-control" @bind="currentUser.apellido" placeholder="Ingrese el apellido" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Género</label>
+                        <select class="form-select" @bind="currentUser.id_Genero">
+                            <option value="">Seleccione un género</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CloseModal">Cancelar</button>
+                    <button class="btn btn-primary" @onclick="SaveUser">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    private List<Persona> usuarios = new();
+    private Persona currentUser = new();
+    private bool showModal = false;
+    private string modalTitle = "Nuevo Usuario";
+
+    // Paginación
+    private int paginaActual = 1;
+    private int usuariosPorPagina = 10;
+    private int totalPaginas => (int)Math.Ceiling((double)usuarios.Count / usuariosPorPagina);
+
+    private IEnumerable<Persona> UsuariosPaginados =>
+        usuarios.Skip((paginaActual - 1) * usuariosPorPagina).Take(usuariosPorPagina);
+
+    private void CambiarPagina(int nuevaPagina)
+    {
+        if (nuevaPagina >= 1 && nuevaPagina <= totalPaginas)
+        {
+            paginaActual = nuevaPagina;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUsuarios();
+    }
+
+    private async Task LoadUsuarios()
+    {
+        usuarios = await UserService.GetUsuariosAsync();
+        if (paginaActual > totalPaginas)
+            paginaActual = totalPaginas;
+    }
+
+    private void OpenCreateModal()
+    {
+        currentUser = new Persona();
+        modalTitle = "Crear Nuevo Usuario";
+        showModal = true;
+    }
+
+    private void OpenEditModal(Persona usuario)
+    {
+        currentUser = new Persona
+            {
+                id = usuario.id,
+                nombre = usuario.nombre,
+                apellido = usuario.apellido,
+                id_Genero = usuario.id_Genero
+            };
+        modalTitle = "Editar Usuario";
+        showModal = true;
+    }
+
+    private async Task SaveUser()
+    {
+        if (currentUser.id == 0)
+        {
+            await UserService.CreateUsuarioAsync(currentUser);
+        }
+        else
+        {
+            await UserService.UpdateUsuarioAsync(currentUser);
+        }
+        showModal = false;
+        await LoadUsuarios();
+        paginaActual = 1; // Reinicia a la primera página
+    }
+
+    private async Task DeleteUser(int id)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", "¿Estás seguro de eliminar este usuario?");
+        if (confirmed)
+        {
+            await UserService.DeleteUsuarioAsync(id);
+            await LoadUsuarios();
+            paginaActual = 1;
+        }
+    }
+
+    private void CloseModal()
+    {
+        showModal = false;
+    }
+
+    private string MostrarGenero(int? idGenero)
+    {
+        return idGenero switch
+        {
+            1 => "Masculino",
+            2 => "Femenino",
+            _ => "Sin especificar"
+        };
+    }
+}

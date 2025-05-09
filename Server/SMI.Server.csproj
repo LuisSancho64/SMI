@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.14" />
+		<!-- Cambié la versión aquí -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.14" />
+		<!-- Cambié la versión aquí -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.14" />
+		<!-- Cambié la versión aquí -->
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Client\SMI.Client.csproj" />
+		<ProjectReference Include="..\Shared\SMI.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
+
