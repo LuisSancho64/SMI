@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kiBTpLnYJjaVN0YV+G+iC39ISzQu4L8/7Rtky6ghAeA=",
+  "Hash": "2tDwjkUfYLeOwcwHpgM9CPmoA6cRZQ7P7maVt08RwDo=",
   "Source": "SMI.Server",
   "BasePath": "_content/SMI.Server",
   "Mode": "Default",
@@ -85,8 +85,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "rwu0s01ab8",
-      "Integrity": "e8iGKFb6S3EvwlaAmNucuTRE6VSeIo3lnjQgwEf2484=",
+      "Fingerprint": "g90236owc0",
+      "Integrity": "LFdU4Iyqg/XnL3/FsdhPGQ5u06TAdJluO2MY/t8YARM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -1324,8 +1324,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "9onogylu0j",
-      "Integrity": "J8p2QF8HeMr2d1BSz7C12zTaOs9Kq1GzmedXOlm03OA=",
+      "Fingerprint": "nyln0lrs6l",
+      "Integrity": "7/I/1DXQU08+zTDS5siZ4cNAlRUqCLFrSZo4DiVaDdQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb"
@@ -1345,8 +1345,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "luolebwpf2",
-      "Integrity": "DYv4JclJa89n7+oWYzysoLyT6nKQRTY2qTA+2wnsNvM=",
+      "Fingerprint": "o2fs7dspwi",
+      "Integrity": "sAkMTa8r6MqY2gc6BVKxr+TQoNv0CHFYTA3lyei8vkE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm"
@@ -1366,8 +1366,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "0xq1odr8tu",
-      "Integrity": "hFrQT3Gb9kksitq0OYgkcv14O5xAe2g6sDHHSm7Gpq4=",
+      "Fingerprint": "b4atbeytrq",
+      "Integrity": "heT7ergSKQrFyEa8c5ENlBlBhwTnbjtd90DeMRSAClY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.pdb"
@@ -1387,8 +1387,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "8n6noh9kcf",
-      "Integrity": "nPImsBn/k/iGF2j7xo5ijeD6ScOGwmnzsnJGnFcnofQ=",
+      "Fingerprint": "m1l1b16jqa",
+      "Integrity": "ys+gxe0igNcxTC9+blAsYrugBSd8jqjFpV+tX8BDGVY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.wasm"
@@ -5846,7 +5846,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6qofu3y2zl-hkxh53q1d8.gz"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-9onogylu0j.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-nyln0lrs6l.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5860,11 +5860,11 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rnmnldxsi6",
-      "Integrity": "iZSwxswIixLdBpMOKmnzbZYcKK5x08nk3bcJGEDU9OI=",
+      "Fingerprint": "mvwg4eh18q",
+      "Integrity": "ctZlu6RQBJhrMQ6IcCPJWSzc9jtvp6FGwdoO1ecLo5o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-9onogylu0j.gz"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-nyln0lrs6l.gz"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6wp01p562m-xlpspxuy08.gz",
@@ -6182,7 +6182,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\89f1hp89m8-jpv7ln03ts.gz"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-8n6noh9kcf.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-m1l1b16jqa.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6196,11 +6196,11 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6zk5ewemjj",
-      "Integrity": "cqeKaQEW9xsBJZcs2rnsJGP5StXOvA0+2Ig+P/2QSPc=",
+      "Fingerprint": "l3cj1mxozs",
+      "Integrity": "/3I05Yyl0tOYq7VM7s8RY4Xm56eZhanUobUatFmBzxw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-8n6noh9kcf.gz"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-m1l1b16jqa.gz"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8j382nsgs1-t7f1ig35ug.gz",
@@ -6455,7 +6455,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9jbbksahi0-d0rpjlr2w6.gz"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-luolebwpf2.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-o2fs7dspwi.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6469,11 +6469,11 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fwa2kpzadn",
-      "Integrity": "r+vSGXDlCEgFeNA2TUJWZ7UNAEfg8TnTi7eGLOxotZs=",
+      "Fingerprint": "d7w5x39chm",
+      "Integrity": "t5Bykv5oYnD8e01iXowr0Kg5qUgZypEDqjrLcJP7wUM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-luolebwpf2.gz"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-o2fs7dspwi.gz"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\a76d0n1hry-tptq2av103.gz",
@@ -6791,7 +6791,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\d3wo9yp2qn-0mk72np563.gz"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rwu0s01ab8.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-g90236owc0.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6805,11 +6805,11 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rg9oe8cn59",
-      "Integrity": "67NSd4aBrMtnjAhePaISs6YFkBNOoIg3GWu05dBSAPs=",
+      "Fingerprint": "j2gjbz9b8g",
+      "Integrity": "G3+IRPLLn5M7qeIBBFciMOseTil0mRHG8iG7b7hGQDE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rwu0s01ab8.gz"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-g90236owc0.gz"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\du05klm19u-bowrwm8oxj.gz",
@@ -9227,7 +9227,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\uppoua0dmj-poh5vm95lf.gz"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-0xq1odr8tu.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-b4atbeytrq.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -9241,11 +9241,11 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w2iyj9n911",
-      "Integrity": "+AiBk5MXKy7AKw4/1saNW6lWCIBvgwTeYqepPJ51pM4=",
+      "Fingerprint": "kmwceecw78",
+      "Integrity": "LLZoTpgspK4dc1dSKrDHngIWuqVzoGzFAv8pAVFQ1cU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-0xq1odr8tu.gz"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-b4atbeytrq.gz"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\usvu5hnk5w-2yu6ko3b0x.gz",
@@ -10596,28 +10596,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e8iGKFb6S3EvwlaAmNucuTRE6VSeIo3lnjQgwEf2484=\""
+          "Value": "\"LFdU4Iyqg/XnL3/FsdhPGQ5u06TAdJluO2MY/t8YARM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:41:29 GMT"
+          "Value": "Mon, 12 May 2025 20:22:59 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e8iGKFb6S3EvwlaAmNucuTRE6VSeIo3lnjQgwEf2484="
+          "Value": "sha256-LFdU4Iyqg/XnL3/FsdhPGQ5u06TAdJluO2MY/t8YARM="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rwu0s01ab8.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-g90236owc0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000098318749"
+          "Quality": "0.000098328417"
         }
       ],
       "ResponseHeaders": [
@@ -10635,15 +10635,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10170"
+          "Value": "10169"
         },
         {
           "Name": "ETag",
-          "Value": "\"67NSd4aBrMtnjAhePaISs6YFkBNOoIg3GWu05dBSAPs=\""
+          "Value": "\"G3+IRPLLn5M7qeIBBFciMOseTil0mRHG8iG7b7hGQDE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:38 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -10655,19 +10655,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e8iGKFb6S3EvwlaAmNucuTRE6VSeIo3lnjQgwEf2484=\""
+          "Value": "W/\"LFdU4Iyqg/XnL3/FsdhPGQ5u06TAdJluO2MY/t8YARM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e8iGKFb6S3EvwlaAmNucuTRE6VSeIo3lnjQgwEf2484="
+          "Value": "sha256-LFdU4Iyqg/XnL3/FsdhPGQ5u06TAdJluO2MY/t8YARM="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rwu0s01ab8.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-g90236owc0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10684,7 +10684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10170"
+          "Value": "10169"
         },
         {
           "Name": "Content-Type",
@@ -10692,11 +10692,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"67NSd4aBrMtnjAhePaISs6YFkBNOoIg3GWu05dBSAPs=\""
+          "Value": "\"G3+IRPLLn5M7qeIBBFciMOseTil0mRHG8iG7b7hGQDE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:38 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -10706,7 +10706,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-67NSd4aBrMtnjAhePaISs6YFkBNOoIg3GWu05dBSAPs="
+          "Value": "sha256-G3+IRPLLn5M7qeIBBFciMOseTil0mRHG8iG7b7hGQDE="
         }
       ]
     },
@@ -18671,7 +18671,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45964"
+          "Value": "50404"
         },
         {
           "Name": "Content-Type",
@@ -18679,28 +18679,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J8p2QF8HeMr2d1BSz7C12zTaOs9Kq1GzmedXOlm03OA=\""
+          "Value": "\"7/I/1DXQU08+zTDS5siZ4cNAlRUqCLFrSZo4DiVaDdQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:41:29 GMT"
+          "Value": "Mon, 12 May 2025 20:22:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J8p2QF8HeMr2d1BSz7C12zTaOs9Kq1GzmedXOlm03OA="
+          "Value": "sha256-7/I/1DXQU08+zTDS5siZ4cNAlRUqCLFrSZo4DiVaDdQ="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.pdb",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-9onogylu0j.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-nyln0lrs6l.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000026338663"
+          "Quality": "0.000026340050"
         }
       ],
       "ResponseHeaders": [
@@ -18718,15 +18718,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37966"
+          "Value": "37964"
         },
         {
           "Name": "ETag",
-          "Value": "\"iZSwxswIixLdBpMOKmnzbZYcKK5x08nk3bcJGEDU9OI=\""
+          "Value": "\"ctZlu6RQBJhrMQ6IcCPJWSzc9jtvp6FGwdoO1ecLo5o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -18738,19 +18738,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"J8p2QF8HeMr2d1BSz7C12zTaOs9Kq1GzmedXOlm03OA=\""
+          "Value": "W/\"7/I/1DXQU08+zTDS5siZ4cNAlRUqCLFrSZo4DiVaDdQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J8p2QF8HeMr2d1BSz7C12zTaOs9Kq1GzmedXOlm03OA="
+          "Value": "sha256-7/I/1DXQU08+zTDS5siZ4cNAlRUqCLFrSZo4DiVaDdQ="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-9onogylu0j.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-nyln0lrs6l.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -18767,7 +18767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37966"
+          "Value": "37964"
         },
         {
           "Name": "Content-Type",
@@ -18775,11 +18775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iZSwxswIixLdBpMOKmnzbZYcKK5x08nk3bcJGEDU9OI=\""
+          "Value": "\"ctZlu6RQBJhrMQ6IcCPJWSzc9jtvp6FGwdoO1ecLo5o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -18789,7 +18789,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iZSwxswIixLdBpMOKmnzbZYcKK5x08nk3bcJGEDU9OI="
+          "Value": "sha256-ctZlu6RQBJhrMQ6IcCPJWSzc9jtvp6FGwdoO1ecLo5o="
         }
       ]
     },
@@ -18808,7 +18808,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "70421"
+          "Value": "79637"
         },
         {
           "Name": "Content-Type",
@@ -18816,28 +18816,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DYv4JclJa89n7+oWYzysoLyT6nKQRTY2qTA+2wnsNvM=\""
+          "Value": "\"sAkMTa8r6MqY2gc6BVKxr+TQoNv0CHFYTA3lyei8vkE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:41:29 GMT"
+          "Value": "Mon, 12 May 2025 20:22:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DYv4JclJa89n7+oWYzysoLyT6nKQRTY2qTA+2wnsNvM="
+          "Value": "sha256-sAkMTa8r6MqY2gc6BVKxr+TQoNv0CHFYTA3lyei8vkE="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-luolebwpf2.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-o2fs7dspwi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000037944904"
+          "Quality": "0.000037950664"
         }
       ],
       "ResponseHeaders": [
@@ -18855,15 +18855,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26353"
+          "Value": "26349"
         },
         {
           "Name": "ETag",
-          "Value": "\"r+vSGXDlCEgFeNA2TUJWZ7UNAEfg8TnTi7eGLOxotZs=\""
+          "Value": "\"t5Bykv5oYnD8e01iXowr0Kg5qUgZypEDqjrLcJP7wUM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -18875,19 +18875,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DYv4JclJa89n7+oWYzysoLyT6nKQRTY2qTA+2wnsNvM=\""
+          "Value": "W/\"sAkMTa8r6MqY2gc6BVKxr+TQoNv0CHFYTA3lyei8vkE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DYv4JclJa89n7+oWYzysoLyT6nKQRTY2qTA+2wnsNvM="
+          "Value": "sha256-sAkMTa8r6MqY2gc6BVKxr+TQoNv0CHFYTA3lyei8vkE="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-luolebwpf2.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-o2fs7dspwi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -18904,7 +18904,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26353"
+          "Value": "26349"
         },
         {
           "Name": "Content-Type",
@@ -18912,11 +18912,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"r+vSGXDlCEgFeNA2TUJWZ7UNAEfg8TnTi7eGLOxotZs=\""
+          "Value": "\"t5Bykv5oYnD8e01iXowr0Kg5qUgZypEDqjrLcJP7wUM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 19:41:29 GMT"
         },
         {
           "Name": "Vary",
@@ -18926,7 +18926,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-r+vSGXDlCEgFeNA2TUJWZ7UNAEfg8TnTi7eGLOxotZs="
+          "Value": "sha256-t5Bykv5oYnD8e01iXowr0Kg5qUgZypEDqjrLcJP7wUM="
         }
       ]
     },
@@ -18953,28 +18953,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hFrQT3Gb9kksitq0OYgkcv14O5xAe2g6sDHHSm7Gpq4=\""
+          "Value": "\"heT7ergSKQrFyEa8c5ENlBlBhwTnbjtd90DeMRSAClY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 20:22:56 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hFrQT3Gb9kksitq0OYgkcv14O5xAe2g6sDHHSm7Gpq4="
+          "Value": "sha256-heT7ergSKQrFyEa8c5ENlBlBhwTnbjtd90DeMRSAClY="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.pdb",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-0xq1odr8tu.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-b4atbeytrq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000113571834"
+          "Quality": "0.000109277675"
         }
       ],
       "ResponseHeaders": [
@@ -18992,11 +18992,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8804"
+          "Value": "9150"
         },
         {
           "Name": "ETag",
-          "Value": "\"+AiBk5MXKy7AKw4/1saNW6lWCIBvgwTeYqepPJ51pM4=\""
+          "Value": "\"LLZoTpgspK4dc1dSKrDHngIWuqVzoGzFAv8pAVFQ1cU=\""
         },
         {
           "Name": "Last-Modified",
@@ -19012,19 +19012,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hFrQT3Gb9kksitq0OYgkcv14O5xAe2g6sDHHSm7Gpq4=\""
+          "Value": "W/\"heT7ergSKQrFyEa8c5ENlBlBhwTnbjtd90DeMRSAClY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hFrQT3Gb9kksitq0OYgkcv14O5xAe2g6sDHHSm7Gpq4="
+          "Value": "sha256-heT7ergSKQrFyEa8c5ENlBlBhwTnbjtd90DeMRSAClY="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.pdb.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-0xq1odr8tu.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-b4atbeytrq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19041,7 +19041,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8804"
+          "Value": "9150"
         },
         {
           "Name": "Content-Type",
@@ -19049,7 +19049,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+AiBk5MXKy7AKw4/1saNW6lWCIBvgwTeYqepPJ51pM4=\""
+          "Value": "\"LLZoTpgspK4dc1dSKrDHngIWuqVzoGzFAv8pAVFQ1cU=\""
         },
         {
           "Name": "Last-Modified",
@@ -19063,7 +19063,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+AiBk5MXKy7AKw4/1saNW6lWCIBvgwTeYqepPJ51pM4="
+          "Value": "sha256-LLZoTpgspK4dc1dSKrDHngIWuqVzoGzFAv8pAVFQ1cU="
         }
       ]
     },
@@ -19090,28 +19090,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nPImsBn/k/iGF2j7xo5ijeD6ScOGwmnzsnJGnFcnofQ=\""
+          "Value": "\"ys+gxe0igNcxTC9+blAsYrugBSd8jqjFpV+tX8BDGVY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 19:35:37 GMT"
+          "Value": "Mon, 12 May 2025 20:22:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nPImsBn/k/iGF2j7xo5ijeD6ScOGwmnzsnJGnFcnofQ="
+          "Value": "sha256-ys+gxe0igNcxTC9+blAsYrugBSd8jqjFpV+tX8BDGVY="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.wasm",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-8n6noh9kcf.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-m1l1b16jqa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000230627306"
+          "Quality": "0.000205973223"
         }
       ],
       "ResponseHeaders": [
@@ -19129,11 +19129,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4335"
+          "Value": "4854"
         },
         {
           "Name": "ETag",
-          "Value": "\"cqeKaQEW9xsBJZcs2rnsJGP5StXOvA0+2Ig+P/2QSPc=\""
+          "Value": "\"/3I05Yyl0tOYq7VM7s8RY4Xm56eZhanUobUatFmBzxw=\""
         },
         {
           "Name": "Last-Modified",
@@ -19149,19 +19149,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nPImsBn/k/iGF2j7xo5ijeD6ScOGwmnzsnJGnFcnofQ=\""
+          "Value": "W/\"ys+gxe0igNcxTC9+blAsYrugBSd8jqjFpV+tX8BDGVY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nPImsBn/k/iGF2j7xo5ijeD6ScOGwmnzsnJGnFcnofQ="
+          "Value": "sha256-ys+gxe0igNcxTC9+blAsYrugBSd8jqjFpV+tX8BDGVY="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.wasm.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-8n6noh9kcf.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-m1l1b16jqa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19178,7 +19178,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4335"
+          "Value": "4854"
         },
         {
           "Name": "Content-Type",
@@ -19186,7 +19186,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cqeKaQEW9xsBJZcs2rnsJGP5StXOvA0+2Ig+P/2QSPc=\""
+          "Value": "\"/3I05Yyl0tOYq7VM7s8RY4Xm56eZhanUobUatFmBzxw=\""
         },
         {
           "Name": "Last-Modified",
@@ -19200,7 +19200,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cqeKaQEW9xsBJZcs2rnsJGP5StXOvA0+2Ig+P/2QSPc="
+          "Value": "sha256-/3I05Yyl0tOYq7VM7s8RY4Xm56eZhanUobUatFmBzxw="
         }
       ]
     },

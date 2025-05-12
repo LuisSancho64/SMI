@@ -9,8 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Añadir servicios
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-
 builder.Services.AddScoped<ITipoDocumentoService, TipoDocumentoService>();
+builder.Services.AddScoped<IPasswordService, PasswordService>();
+
 
 // Configurar DbContext para SGISDbContext (para el login u otro contexto general)
 builder.Services.AddDbContext<SGISDbContext>(options =>

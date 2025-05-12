@@ -50,3 +50,4 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebasset
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.json

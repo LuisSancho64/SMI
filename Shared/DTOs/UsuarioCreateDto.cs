@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace SMI.Shared.DTOs
 {
-    public class UsuarioDto
+    public class UsuarioCreateDto
     {
-        public int Id { get; set; }
-
-        public int id_Persona { get; set; }
-        public bool Activo { get; set; }
+        public int Id_Persona { get; set; }
         public string Clave { get; set; }
-        public PersonaDto Persona { get; set; }
+        public bool Activo { get; set; } = true;
     }
-
 }

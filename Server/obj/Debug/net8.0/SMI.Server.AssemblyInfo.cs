@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMI.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b3765900578e7532881d09d684f5c0a2d705d37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+874cc21f305de56a31ade088ea246243c212d79a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMI.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMI.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

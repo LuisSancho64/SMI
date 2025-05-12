@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SMI.Server.Data;
+using SMI.Server.Services;
 using SMI.Shared.DTOs;
+using SMI.Shared.Interfaces;
 using SMI.Shared.Models;
 
 namespace SMI.Server.Controllers
@@ -11,10 +13,12 @@ namespace SMI.Server.Controllers
     public class AuthController : ControllerBase
     {
         private readonly SGISDbContext _context;
+        private readonly IPasswordService _passwordService;
 
-        public AuthController(SGISDbContext context)
+        public AuthController(SGISDbContext context, IPasswordService passwordService)
         {
             _context = context;
+            _passwordService = passwordService;
 
             // Intentar hacer una consulta simple para verificar la conexión
             try
@@ -36,32 +40,39 @@ namespace SMI.Server.Controllers
         {
             try
             {
-                var usuarioDto = await _context.Usuario
-                    .AsNoTracking()
-                    .Where(u => u.Persona.Correo == loginDto.Correo &&
-                                u.Clave == loginDto.Clave &&
-                                u.Activo)
-                    .Select(u => new UsuarioDto
-                    {
-                        Id = u.Id,
-                        Activo = u.Activo,
-                        Clave = u.Clave,
-                        Persona = new PersonaDto
-                        {
-                            Id = u.Persona.id,
-                            Correo = u.Persona.Correo,
-                            Nombre = u.Persona.nombre,
-                            Apellido = u.Persona.apellido,
-                            FechaNacimiento = u.Persona.FechaNacimiento ?? DateTime.MinValue,
-                            Id_Genero = u.Persona.id_Genero ?? 0,
-                        }
-                    })
+                // Primero, buscar el usuario por correo (sin verificar la contraseña aún)
+                var usuario = await _context.Usuario
+                    .Include(u => u.Persona)
+                    .Where(u => u.Persona.Correo == loginDto.Correo && u.Activo)
                     .FirstOrDefaultAsync();
 
-                if (usuarioDto == null)
+                if (usuario == null)
                 {
                     return Unauthorized("Usuario no encontrado o no activo.");
                 }
+
+                // Verificar la contraseña usando BCrypt
+                if (!_passwordService.VerifyPassword(loginDto.Clave, usuario.Clave))
+                {
+                    return Unauthorized("Contraseña incorrecta.");
+                }
+
+                // Si llegamos aquí, el usuario y la contraseña son correctos
+                var usuarioDto = new UsuarioDto
+                {
+                    Id = usuario.Id,
+                    Activo = usuario.Activo,
+                    // No incluir la contraseña en la respuesta
+                    Persona = new PersonaDto
+                    {
+                        Id = usuario.Persona.id,
+                        Correo = usuario.Persona.Correo,
+                        Nombre = usuario.Persona.nombre,
+                        Apellido = usuario.Persona.apellido,
+                        FechaNacimiento = usuario.Persona.FechaNacimiento ?? DateTime.MinValue,
+                        Id_Genero = usuario.Persona.id_Genero ?? 0,
+                    }
+                };
 
                 return Ok(usuarioDto);
             }
@@ -71,5 +82,39 @@ namespace SMI.Server.Controllers
             }
         }
 
+        // Método para migrar contraseñas existentes
+        [HttpPost("migrar-contrasenas")]
+        public async Task<IActionResult> MigrarContrasenas()
+        {
+            try
+            {
+                await MigrarContrasenasExistentes();
+                return Ok("Contraseñas migradas correctamente");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error al migrar contraseñas: {ex.Message}");
+            }
+        }
+
+        // Método privado para realizar la migración
+        private async Task MigrarContrasenasExistentes()
+        {
+            var usuarios = await _context.Usuario.ToListAsync();
+
+            foreach (var usuario in usuarios)
+            {
+                // Asumiendo que las contraseñas actuales están en texto plano
+                string contrasenaTextoPlano = usuario.Clave;
+
+                // Hashear la contraseña
+                usuario.Clave = _passwordService.HashPassword(contrasenaTextoPlano);
+
+                // Marcar la entidad como modificada
+                _context.Entry(usuario).State = EntityState.Modified;
+            }
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

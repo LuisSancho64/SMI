@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +59,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Personas.razor",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\Personas.razor",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
-              "RelativeToolTip": "Client\\Pages\\Personas.razor",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAowIEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T19:35:17.907Z",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Server\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowNAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:18:53.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonasController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonasController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\PersonasController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonasController.cs",
-              "RelativeToolTip": "Server\\Controllers\\PersonasController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA9wEcAAAAKAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:34:14.998Z"
+              "WhenOpened": "2025-05-12T20:17:43.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\UsuarioDto.cs",
+              "RelativeToolTip": "Shared\\DTOs\\UsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:11:56.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:10:23.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Interfaces\\IPasswordService.cs",
+              "RelativeDocumentMoniker": "Shared\\Interfaces\\IPasswordService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Interfaces\\IPasswordService.cs",
+              "RelativeToolTip": "Shared\\Interfaces\\IPasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:08:36.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Services\\PasswordService.cs",
+              "RelativeToolTip": "Server\\Services\\PasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T20:09:55.253Z",
+              "EditorCaption": ""
             }
           ]
         }

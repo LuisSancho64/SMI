@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace SMI.Shared.DTOs
 {
-    public class UsuarioDto
+    public class UsuarioUpdateDto
     {
-        public int Id { get; set; }
-
-        public int id_Persona { get; set; }
+        public string Clave { get; set; } // Opcional, solo si se quiere cambiar
         public bool Activo { get; set; }
-        public string Clave { get; set; }
-        public PersonaDto Persona { get; set; }
     }
-
 }

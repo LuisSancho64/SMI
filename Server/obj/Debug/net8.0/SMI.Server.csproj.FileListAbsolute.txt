@@ -570,3 +570,4 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Server\obj\Debug\net8.0\refint\SMI.Ser
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Server\obj\Debug\net8.0\SMI.Server.pdb
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Server\obj\Debug\net8.0\SMI.Server.genruntimeconfig.cache
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Server\obj\Debug\net8.0\ref\SMI.Server.dll
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Server\bin\Debug\net8.0\BCrypt.Net-Next.dll

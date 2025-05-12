@@ -2374,8 +2374,8 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\SMI.Client.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\refint\SMI.Client.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\SMI.Client.pdb
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\ref\SMI.Client.dll
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-8n6noh9kcf.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-0xq1odr8tu.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-luolebwpf2.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-9onogylu0j.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-rwu0s01ab8.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-m1l1b16jqa.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-b4atbeytrq.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-o2fs7dspwi.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-nyln0lrs6l.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-g90236owc0.gz
