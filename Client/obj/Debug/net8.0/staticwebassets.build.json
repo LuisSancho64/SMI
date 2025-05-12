@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TmdxlHxqe2y9aPCvzPRHIVfSpXhZ0gbmfXc7MnFwKk0=",
+  "Hash": "t/vJQq98NhYiRIj+0PKqSi/4o49dWTMC8PZG32dcSPw=",
   "Source": "SMI.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "vk82zcq2c2",
-      "Integrity": "72p6T4ZTRd1n0QR98SQHFjIqOhiSUFN+TLdj6mkkIZE=",
+      "Fingerprint": "rgqj349s47",
+      "Integrity": "RfDDo6lIvnjNCrQgCmYSows4QuiXFlRvm+egUiARCik=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "lc4ztgqe4x",
-      "Integrity": "O2JuAodfX4rKHQbS7Xm20TeUFTEPhXVAWYJ9elLlfA4=",
+      "Fingerprint": "56slqndfbq",
+      "Integrity": "I9gkmoev5BOf39HFWveHMFf49xrhNDLfJYTx14NSBiU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\SMI.Client.pdb"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "7genodetiv",
-      "Integrity": "5zSAwTNwLqg0h9ksR1inLu7wG9b0lN9NKBaXtvI3IHs=",
+      "Fingerprint": "un8zj44d9f",
+      "Integrity": "ZuZKxe9zmOe2PELKOHeULb1uYd9YZUtEAdhoP/SScMk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\webcil\\SMI.Client.wasm"
@@ -5918,7 +5918,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.Claims.wasm"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-lc4ztgqe4x.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-56slqndfbq.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5932,8 +5932,8 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ost19w3vuo",
-      "Integrity": "GGYRn6I4eOBCtFYCTpBQSiPubxqiiWU++q3G4QpgNvQ=",
+      "Fingerprint": "2q89g981rb",
+      "Integrity": "aih+1XGhytEjtiaAPUngLOewzqchJALmRdF3oiSGlAM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb"
@@ -6527,7 +6527,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Parallel.wasm"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-7genodetiv.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-un8zj44d9f.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6541,8 +6541,8 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4hvhk4e0de",
-      "Integrity": "mL3vYunMC6IwPtAm3xLE9WE7W4qlWNfQ/3+HwUHAui0=",
+      "Fingerprint": "70bsajoi5q",
+      "Integrity": "SWNqIFSW8kjbA+cZSUJZCNKkBcFXNGNQEoT+qpgtWQI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm"
@@ -6863,7 +6863,7 @@
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.wasm"
     },
     {
-      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-vk82zcq2c2.gz",
+      "Identity": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rgqj349s47.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6877,8 +6877,8 @@
       "RelatedAsset": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4gcfu6skm2",
-      "Integrity": "PJ2zhUoDqzDebVXTY3xGrkaG75VjHjFxsS8otoBYW2M=",
+      "Fingerprint": "6m2h2tjhxk",
+      "Integrity": "fm1Vz8FurHAFvn+oW+9M2+f51TtKp9C9ElDwDGq+J7w=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -10743,11 +10743,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"72p6T4ZTRd1n0QR98SQHFjIqOhiSUFN+TLdj6mkkIZE=\""
+          "Value": "\"RfDDo6lIvnjNCrQgCmYSows4QuiXFlRvm+egUiARCik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:27:39 GMT"
+          "Value": "Mon, 12 May 2025 23:30:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10757,18 +10757,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-72p6T4ZTRd1n0QR98SQHFjIqOhiSUFN+TLdj6mkkIZE="
+          "Value": "sha256-RfDDo6lIvnjNCrQgCmYSows4QuiXFlRvm+egUiARCik="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-vk82zcq2c2.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rgqj349s47.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000097580016"
+          "Quality": "0.000097532430"
         }
       ],
       "ResponseHeaders": [
@@ -10778,15 +10778,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10247"
+          "Value": "10252"
         },
         {
           "Name": "ETag",
-          "Value": "\"PJ2zhUoDqzDebVXTY3xGrkaG75VjHjFxsS8otoBYW2M=\""
+          "Value": "\"fm1Vz8FurHAFvn+oW+9M2+f51TtKp9C9ElDwDGq+J7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10806,19 +10806,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"72p6T4ZTRd1n0QR98SQHFjIqOhiSUFN+TLdj6mkkIZE=\""
+          "Value": "W/\"RfDDo6lIvnjNCrQgCmYSows4QuiXFlRvm+egUiARCik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-72p6T4ZTRd1n0QR98SQHFjIqOhiSUFN+TLdj6mkkIZE="
+          "Value": "sha256-RfDDo6lIvnjNCrQgCmYSows4QuiXFlRvm+egUiARCik="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-vk82zcq2c2.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-rgqj349s47.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10827,7 +10827,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10247"
+          "Value": "10252"
         },
         {
           "Name": "Content-Type",
@@ -10835,11 +10835,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PJ2zhUoDqzDebVXTY3xGrkaG75VjHjFxsS8otoBYW2M=\""
+          "Value": "\"fm1Vz8FurHAFvn+oW+9M2+f51TtKp9C9ElDwDGq+J7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10857,7 +10857,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PJ2zhUoDqzDebVXTY3xGrkaG75VjHjFxsS8otoBYW2M="
+          "Value": "sha256-fm1Vz8FurHAFvn+oW+9M2+f51TtKp9C9ElDwDGq+J7w="
         }
       ]
     },
@@ -19092,7 +19092,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55512"
+          "Value": "56868"
         },
         {
           "Name": "Content-Type",
@@ -19100,11 +19100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O2JuAodfX4rKHQbS7Xm20TeUFTEPhXVAWYJ9elLlfA4=\""
+          "Value": "\"I9gkmoev5BOf39HFWveHMFf49xrhNDLfJYTx14NSBiU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:27:39 GMT"
+          "Value": "Mon, 12 May 2025 23:30:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19114,18 +19114,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O2JuAodfX4rKHQbS7Xm20TeUFTEPhXVAWYJ9elLlfA4="
+          "Value": "sha256-I9gkmoev5BOf39HFWveHMFf49xrhNDLfJYTx14NSBiU="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.pdb",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-lc4ztgqe4x.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-56slqndfbq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000024307244"
+          "Quality": "0.000023738309"
         }
       ],
       "ResponseHeaders": [
@@ -19135,15 +19135,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41139"
+          "Value": "42125"
         },
         {
           "Name": "ETag",
-          "Value": "\"GGYRn6I4eOBCtFYCTpBQSiPubxqiiWU++q3G4QpgNvQ=\""
+          "Value": "\"aih+1XGhytEjtiaAPUngLOewzqchJALmRdF3oiSGlAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19163,19 +19163,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"O2JuAodfX4rKHQbS7Xm20TeUFTEPhXVAWYJ9elLlfA4=\""
+          "Value": "W/\"I9gkmoev5BOf39HFWveHMFf49xrhNDLfJYTx14NSBiU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O2JuAodfX4rKHQbS7Xm20TeUFTEPhXVAWYJ9elLlfA4="
+          "Value": "sha256-I9gkmoev5BOf39HFWveHMFf49xrhNDLfJYTx14NSBiU="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-lc4ztgqe4x.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-56slqndfbq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19184,7 +19184,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41139"
+          "Value": "42125"
         },
         {
           "Name": "Content-Type",
@@ -19192,11 +19192,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GGYRn6I4eOBCtFYCTpBQSiPubxqiiWU++q3G4QpgNvQ=\""
+          "Value": "\"aih+1XGhytEjtiaAPUngLOewzqchJALmRdF3oiSGlAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19214,7 +19214,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GGYRn6I4eOBCtFYCTpBQSiPubxqiiWU++q3G4QpgNvQ="
+          "Value": "sha256-aih+1XGhytEjtiaAPUngLOewzqchJALmRdF3oiSGlAM="
         }
       ]
     },
@@ -19229,7 +19229,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96021"
+          "Value": "98581"
         },
         {
           "Name": "Content-Type",
@@ -19237,11 +19237,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5zSAwTNwLqg0h9ksR1inLu7wG9b0lN9NKBaXtvI3IHs=\""
+          "Value": "\"ZuZKxe9zmOe2PELKOHeULb1uYd9YZUtEAdhoP/SScMk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:27:39 GMT"
+          "Value": "Mon, 12 May 2025 23:30:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19251,18 +19251,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5zSAwTNwLqg0h9ksR1inLu7wG9b0lN9NKBaXtvI3IHs="
+          "Value": "sha256-ZuZKxe9zmOe2PELKOHeULb1uYd9YZUtEAdhoP/SScMk="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-7genodetiv.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-un8zj44d9f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000030406227"
+          "Quality": "0.000029641926"
         }
       ],
       "ResponseHeaders": [
@@ -19272,15 +19272,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32887"
+          "Value": "33735"
         },
         {
           "Name": "ETag",
-          "Value": "\"mL3vYunMC6IwPtAm3xLE9WE7W4qlWNfQ/3+HwUHAui0=\""
+          "Value": "\"SWNqIFSW8kjbA+cZSUJZCNKkBcFXNGNQEoT+qpgtWQI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19300,19 +19300,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5zSAwTNwLqg0h9ksR1inLu7wG9b0lN9NKBaXtvI3IHs=\""
+          "Value": "W/\"ZuZKxe9zmOe2PELKOHeULb1uYd9YZUtEAdhoP/SScMk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5zSAwTNwLqg0h9ksR1inLu7wG9b0lN9NKBaXtvI3IHs="
+          "Value": "sha256-ZuZKxe9zmOe2PELKOHeULb1uYd9YZUtEAdhoP/SScMk="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-7genodetiv.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-un8zj44d9f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19321,7 +19321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32887"
+          "Value": "33735"
         },
         {
           "Name": "Content-Type",
@@ -19329,11 +19329,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mL3vYunMC6IwPtAm3xLE9WE7W4qlWNfQ/3+HwUHAui0=\""
+          "Value": "\"SWNqIFSW8kjbA+cZSUJZCNKkBcFXNGNQEoT+qpgtWQI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 22:17:42 GMT"
+          "Value": "Mon, 12 May 2025 23:27:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19351,7 +19351,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mL3vYunMC6IwPtAm3xLE9WE7W4qlWNfQ/3+HwUHAui0="
+          "Value": "sha256-SWNqIFSW8kjbA+cZSUJZCNKkBcFXNGNQEoT+qpgtWQI="
         }
       ]
     },

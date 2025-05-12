@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Index.razor",
-              "RelativeToolTip": "Client\\Pages\\Index.razor",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAQwHAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T22:25:23.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Client\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Services\\AuthService.cs",
-              "RelativeToolTip": "Client\\Services\\AuthService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:21:54.268Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -72,15 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Program.cs",
-              "RelativeDocumentMoniker": "Client\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Program.cs",
-              "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:09:50.161Z",
+              "DocumentIndex": 0,
+              "Title": "Personas.razor",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Personas.razor",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
+              "RelativeToolTip": "Client\\Pages\\Personas.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T22:31:02.016Z",
               "EditorCaption": ""
             }
           ]

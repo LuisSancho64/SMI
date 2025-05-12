@@ -2,6 +2,7 @@
 @inject SMI.Client.Services.PersonaService UserService
 @inject ITipoDocumentoService TipoDocumentoService
 @using SMI.Shared.DTOs
+@using System.ComponentModel.DataAnnotations
 
 <h3>Gestión de Personas</h3>
 
@@ -154,7 +155,6 @@
                             <option value="2">Femenino</option>
                         </select>
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label">Correo</label>
                         <input type="email" class="form-control" @bind="currentUser.Correo" />
@@ -163,7 +163,6 @@
                         <label class="form-label">Fecha Nacimiento</label>
                         <input type="date" class="form-control" @bind="currentUser.FechaNacimiento" />
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label">Tipo Documento</label>
                         <select class="form-select" @bind="currentDocumento.TipoDocumentoId">
@@ -176,7 +175,11 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Número Documento</label>
-                        <input class="form-control" @bind="currentDocumento.NumeroDocumento" />
+                        <input class="form-control" maxlength="10" @bind="currentDocumento.NumeroDocumento" />
+                        @if (showError)
+                        {
+                            <div class="text-danger mt-1">@errorMessage</div>
+                        }
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -208,6 +211,24 @@
         </div>
     </div>
 }
+@if (showError)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content border-danger">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Error</h5>
+                    <button type="button" class="btn-close" @onclick="() => showError = false"></button>
+                </div>
+                <div class="modal-body">
+                    <p>@errorMessage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
 
 @code {
     private List<PersonaDto> Usuarios = new();
@@ -216,6 +237,10 @@
     private PersonaDto currentUser = new();
     private PersonaDocumentoDto currentDocumento = new();
     private bool showModal = false;
+
+    private bool showError = false;
+    private string errorMessage;
+
 
     // Variables para eliminación
     private bool showConfirmDelete = false;
@@ -260,7 +285,7 @@
              u.Documentos?.Any(d => d.NumeroDocumento?.Contains(filtroNumeroDocumento, StringComparison.OrdinalIgnoreCase) == true) == true)
         ).ToList();
 
-        paginaActual = 1; // Volver a la primera página al aplicar filtros
+        paginaActual = 1;
     }
 
     private void LimpiarFiltros()
@@ -322,9 +347,21 @@
     {
         try
         {
+			showError = false;
+
             // Verificar que tenemos los datos del documento
             if (currentDocumento.TipoDocumentoId != 0 && !string.IsNullOrEmpty(currentDocumento.NumeroDocumento))
             {
+                //Validar la cedula si el tipo de documento es cédula de identidad
+                if (currentDocumento.TipoDocumentoId == 1)
+                {
+                    if (!ValidarCedula(currentDocumento.NumeroDocumento))
+                    {
+                        errorMessage = "Número de cédula inválido";
+                        showError = true;
+                        return;
+                    }
+                }
                 // Asegurarse de que la lista de documentos esté inicializada
                 if (currentUser.Documentos == null)
                 {
@@ -332,6 +369,7 @@
                 }
                 else
                 {
+                    currentUser.Documentos ??= new List<PersonaDocumentoDto>();
                     // Limpiar la lista para evitar duplicados
                     currentUser.Documentos.Clear();
                 }
@@ -339,7 +377,7 @@
                 // Añadir el documento actual a la lista de documentos
                 currentUser.Documentos.Add(new PersonaDocumentoDto
                     {
-                        PersonaId = currentUser.Id, // Esto se ignorará para nuevas personas
+                        PersonaId = currentUser.Id,
                         TipoDocumentoId = currentDocumento.TipoDocumentoId,
                         NumeroDocumento = currentDocumento.NumeroDocumento,
                         TipoDocumentoNombre = TiposDocumento
@@ -375,7 +413,6 @@
         catch (Exception ex)
         {
             Console.WriteLine($"Error al guardar: {ex.Message}");
-            // Aquí podrías mostrar un mensaje de error al usuario
         }
     }
 
@@ -383,4 +420,32 @@
     {
         showModal = false;
     }
+
+    private bool ValidarCedula(string cedula)
+    {
+        if (string.IsNullOrWhiteSpace(cedula) || cedula.Length != 10 || !cedula.All(char.IsDigit))
+            return false;
+
+        int provincia = int.Parse(cedula.Substring(0, 2));
+        int tercerDigito = int.Parse(cedula.Substring(2, 1));
+
+        if (provincia < 1 || provincia > 24 || tercerDigito >= 6)
+            return false;
+
+        int[] coeficientes = { 2, 1, 2, 1, 2, 1, 2, 1, 2 };
+        int suma = 0;
+
+        for (int i = 0; i < 9; i++)
+        {
+            int valor = coeficientes[i] * int.Parse(cedula[i].ToString());
+            if (valor > 9)
+                valor -= 9;
+            suma += valor;
+        }
+
+        int digitoVerificador = (10 - (suma % 10)) % 10;
+
+        return digitoVerificador == int.Parse(cedula[9].ToString());
+    }
+
 }

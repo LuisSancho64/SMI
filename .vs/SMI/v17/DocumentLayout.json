@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +35,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Personas.razor",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Personas.razor",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
+              "RelativeToolTip": "Client\\Pages\\Personas.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T22:31:02.016Z",
+              "EditorCaption": ""
             }
           ]
         }
