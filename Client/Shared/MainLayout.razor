@@ -1,17 +1,77 @@
 ﻿@inherits LayoutComponentBase
+@using SMI.Client.Services
+@using SMI.Shared.DTOs
+@using Microsoft.AspNetCore.Components.Authorization
+@using SMI.Client.Auth
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+<CascadingAuthenticationState>
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
         </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+        <main>
+            <div class="top-row px-4 justify-content-end">
+                <AuthorizeView>
+                    <Authorized>
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" @onclick="ToggleUserMenu" id="userDropdown" aria-expanded="@isUserMenuOpen">
+                                <i class="oi oi-person mr-2"></i> @displayName
+                            </button>
+                            <div class="dropdown-menu @(isUserMenuOpen ? "show" : "")" aria-labelledby="userDropdown" style="position: absolute; right: 0;">
+                                <a class="dropdown-item" href="/perfil">
+                                    <i class="oi oi-person mr-2"></i> Mi Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" @onclick="HandleLogout">
+                                    <i class="oi oi-account-logout mr-2"></i> Cerrar Sesión
+                                </button>
+                            </div>
+                        </div>
+                    </Authorized>
+                    <NotAuthorized>
+                        <a href="/login" class="btn btn-primary">Iniciar Sesión</a>
+                    </NotAuthorized>
+                </AuthorizeView>
+            </div>
+
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+</CascadingAuthenticationState>
+
+@code {
+    private UsuarioDto currentUser;
+    private string displayName = "";
+    private bool isUserMenuOpen = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity is not null && user.Identity.IsAuthenticated)
+        {
+            // Carga datos del usuario autenticado
+            currentUser = await AuthService.GetCurrentUser();
+            displayName = $"{currentUser?.Persona?.Nombre} {currentUser?.Persona?.Apellido}";
+        }
+    }
+
+    private void ToggleUserMenu()
+    {
+        isUserMenuOpen = !isUserMenuOpen;
+    }
+
+    private async Task HandleLogout()
+    {
+        await AuthService.Logout();
+        ((CustomAuthStateProvider)AuthStateProvider).NotifyUserLogout();
+        NavigationManager.NavigateTo("/");
+    }
+}

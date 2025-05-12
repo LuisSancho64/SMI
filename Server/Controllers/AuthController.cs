@@ -14,11 +14,13 @@ namespace SMI.Server.Controllers
     {
         private readonly SGISDbContext _context;
         private readonly IPasswordService _passwordService;
+        private readonly IJwtService _jwtService;
 
-        public AuthController(SGISDbContext context, IPasswordService passwordService)
+        public AuthController(SGISDbContext context, IPasswordService passwordService, IJwtService jwtService)
         {
             _context = context;
             _passwordService = passwordService;
+            _jwtService = jwtService;
 
             // Intentar hacer una consulta simple para verificar la conexión
             try
@@ -33,6 +35,8 @@ namespace SMI.Server.Controllers
             {
                 Console.WriteLine($"Error al conectar a la base de datos: {ex.Message}");
             }
+
+            _jwtService = jwtService;
         }
 
         [HttpPost("login")]
@@ -62,7 +66,6 @@ namespace SMI.Server.Controllers
                 {
                     Id = usuario.Id,
                     Activo = usuario.Activo,
-                    // No incluir la contraseña en la respuesta
                     Persona = new PersonaDto
                     {
                         Id = usuario.Persona.id,
@@ -74,7 +77,16 @@ namespace SMI.Server.Controllers
                     }
                 };
 
-                return Ok(usuarioDto);
+                var token = _jwtService.GenerateToken(usuarioDto);
+
+                //Crear respuesta con token y datos del usuario
+                var respuesta = new LoginResponseDto
+                {
+                    Token = token,
+                    Usuario = usuarioDto
+                };
+
+                return Ok(respuesta);
             }
             catch (Exception ex)
             {

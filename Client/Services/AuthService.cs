@@ -1,24 +1,71 @@
-﻿using SMI.Shared.DTOs;
-using SMI.Shared.Interfaces;
-using System.Net.Http;
+﻿// SMI.Client/Services/AuthService.cs
 using System.Net.Http.Json;
-using System.Threading.Tasks;
+using SMI.Shared.DTOs;
+using SMI.Shared.Interfaces;
+using SMI.Client.Auth;
 
-public class AuthService : IAuthService
+namespace SMI.Client.Services
 {
-    private readonly HttpClient _httpClient;
-
-    public AuthService(HttpClient httpClient)
+    public class AuthService : IAuthService
     {
-        _httpClient = httpClient;
-    }
+        private readonly HttpClient _httpClient;
+        private readonly CustomAuthStateProvider _customAuthStateProvider;
+        private readonly LocalStorageService _localStorage;
 
-    public async Task<bool> Login(LoginDTO loginDto)
-    {
-        // Haces la solicitud POST al servidor para autenticar
-        var response = await _httpClient.PostAsJsonAsync("api/auth/login", loginDto);
+        public AuthService(HttpClient httpClient, CustomAuthStateProvider customAuthStateProvider, LocalStorageService localStorage)
+        {
+            _httpClient = httpClient;
+            _localStorage = localStorage;
+            _customAuthStateProvider = customAuthStateProvider;
+        }
 
-        // Si la respuesta es exitosa, regresa true
-        return response.IsSuccessStatusCode;
+        public async Task<LoginResponseDto> Login(LoginDTO loginDto)
+        {
+            var response = await _httpClient.PostAsJsonAsync("api/auth/login", loginDto);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var result = await response.Content.ReadFromJsonAsync<LoginResponseDto>();
+
+                if (result != null)
+                {
+                    // Guardar token y datos del usuario en localStorage
+                    await _localStorage.SetItemAsync("authToken", result.Token);
+                    await _localStorage.SetItemAsync("userData", result.Usuario);
+
+                    // Notificar al proveedor de autenticación para actualizar el estado
+                    _customAuthStateProvider.NotifyUserAuthentication(result.Token);
+
+                    return result;
+                }
+            }
+
+            return null;
+        }
+
+        public async Task Logout()
+        {
+            await _localStorage.RemoveItemAsync("authToken");
+            await _localStorage.RemoveItemAsync("userData");
+
+            // Notificar al proveedor de autenticación para que el estado se actualice
+            _customAuthStateProvider.NotifyUserLogout();
+        }
+
+        public async Task<UsuarioDto> GetCurrentUser()
+        {
+            return await _localStorage.GetItemAsync<UsuarioDto>("userData");
+        }
+
+        public async Task<string> GetToken()
+        {
+            return await _localStorage.GetItemAsync<string>("authToken");
+        }
+
+        public async Task<bool> IsAuthenticated()
+        {
+            var token = await GetToken();
+            return !string.IsNullOrEmpty(token);
+        }
     }
 }

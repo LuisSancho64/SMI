@@ -9,6 +9,11 @@ namespace SMI.Shared.Interfaces
 {
     public interface IAuthService
     {
-        Task<bool> Login(LoginDTO loginDto);
+        Task<LoginResponseDto> Login(LoginDTO loginDto);
+        Task Logout();
+        Task<UsuarioDto> GetCurrentUser();
+        Task<string> GetToken();
+        Task<bool> IsAuthenticated();
     }
+
 }

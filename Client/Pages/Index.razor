@@ -2,9 +2,13 @@
 @layout LoginLayout
 @using SMI.Shared.DTOs
 @using SMI.Shared.Interfaces
-@inject IAuthService AuthService
 @using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using SMI.Client.Auth
+@inject IAuthService AuthService
 @inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthStateProvider
 
 <PageTitle>Login</PageTitle>
 
@@ -73,34 +77,49 @@
 </style>
 
 @code {
+    private bool isLoading = false;
     private LoginDTO loginModel = new();
     private string passwordInputType = "password";
     private string errorMessage = string.Empty;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        // Necesitamos asegurarnos de que LoginDTO tiene atributos de validación
-        // Suponiendo que ya tiene esos atributos, no es necesario añadir código aquí
+        var isAuthenticated = await AuthService.IsAuthenticated();
+        if (isAuthenticated)
+        {
+            Navigation.NavigateTo("/home");
+        }
     }
 
     private async Task HandleLogin()
     {
-        // Validación manual adicional
-        if (string.IsNullOrWhiteSpace(loginModel.Correo) || string.IsNullOrWhiteSpace(loginModel.Clave))
-        {
-            errorMessage = "Por favor complete todos los campos.";
-            return;
-        }
+        errorMessage = string.Empty;
+        isLoading = true;
 
-        // Intento de login
-        bool result = await AuthService.Login(loginModel);
-        if (result)
+        try
         {
-            Navigation.NavigateTo("/home");
+            var result = await AuthService.Login(loginModel);
+
+            if (result != null)
+            {
+                // Notificar al proveedor de autenticación sobre el inicio de sesión
+                ((CustomAuthStateProvider)AuthStateProvider).NotifyUserAuthentication(result.Token);
+
+                // Redirigir a la página principal
+                Navigation.NavigateTo("/home");
+            }
+            else
+            {
+                errorMessage = "Credenciales inválidas. Por favor, inténtalo de nuevo.";
+            }
         }
-        else
+        catch (Exception ex)
         {
-            errorMessage = "Usuario no registrado o credenciales incorrectas.";
+            errorMessage = $"Error al iniciar sesión: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
         }
     }
 

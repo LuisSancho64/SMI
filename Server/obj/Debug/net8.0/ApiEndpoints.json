@@ -156,6 +156,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SMI.Server.Controllers.TestAuthController",
+    "Method": "GetProtegido",
+    "RelativePath": "api/TestAuth/protegido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMI.Server.Controllers.TestAuthController",
+    "Method": "GetPublico",
+    "RelativePath": "api/TestAuth/publico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SMI.Server.Controllers.TipoDocumentoController",
     "Method": "Get",
     "RelativePath": "api/TipoDocumento",
