@@ -1,0 +1,386 @@
+﻿@page "/personas"
+@inject SMI.Client.Services.PersonaService UserService
+@inject ITipoDocumentoService TipoDocumentoService
+@using SMI.Shared.DTOs
+
+<h3>Gestión de Personas</h3>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">Filtros</h5>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">Tipo de Documento</label>
+                <select class="form-select" @bind="filtroTipoDocumentoId">
+                    <option value="0">Todos</option>
+                    @foreach (var tipo in TiposDocumento)
+                    {
+                        <option value="@tipo.Id">@tipo.Nombre</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Número de Documento</label>
+                <input type="text" class="form-control" @bind="filtroNumeroDocumento" placeholder="Ingrese número de documento" />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button class="btn btn-primary me-2" @onclick="AplicarFiltros">Buscar</button>
+                <button class="btn btn-secondary" @onclick="LimpiarFiltros">Limpiar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-between mb-3">
+    <button class="btn btn-success" @onclick="OpenCreateModal">
+        <i class="bi bi-plus-circle"></i> Crear Persona
+    </button>
+    <div>
+        <span class="me-2">Registros por página:</span>
+        <select class="form-select form-select-sm d-inline-block w-auto" @bind="registrosPorPagina">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+    </div>
+</div>
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Género</th>
+            <th>Correo</th>
+            <th>Fecha Nacimiento</th>
+            <th>Tipo Documento</th>
+            <th>Número Documento</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (UsuariosFiltrados.Any())
+        {
+            @foreach (var usuario in UsuariosPaginados)
+            {
+                <tr>
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@(usuario.Id_Genero == 1 ? "Masculino" : usuario.Id_Genero == 2 ? "Femenino" : "No definido")</td>
+                    <td>@usuario.Correo</td>
+                    <td>@usuario.FechaNacimiento?.ToShortDateString()</td>
+                    <td>@(usuario.Documentos?.FirstOrDefault()?.TipoDocumentoNombre ?? "Sin documento")</td>
+                    <td>@(usuario.Documentos?.FirstOrDefault()?.NumeroDocumento ?? "N/A")</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-sm btn-warning" @onclick="@(() => OpenEditModal(usuario))">
+                                <i class="bi bi-pencil"></i> Editar
+                            </button>
+                            <button class="btn btn-sm btn-danger" @onclick="@(() => ConfirmarEliminar(usuario))">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="8" class="text-center">No se encontraron registros.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (UsuariosFiltrados.Any())
+{
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            Mostrando @((paginaActual - 1) * registrosPorPagina + 1) a @Math.Min(paginaActual * registrosPorPagina, UsuariosFiltrados.Count) de @UsuariosFiltrados.Count registros
+        </div>
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @(paginaActual == 1 ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => CambiarPagina(1)">Primera</button>
+                </li>
+                <li class="page-item @(paginaActual == 1 ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => CambiarPagina(paginaActual - 1)">Anterior</button>
+                </li>
+
+                @for (int i = Math.Max(1, paginaActual - 2); i <= Math.Min(totalPaginas, paginaActual + 2); i++)
+                {
+                    var pagina = i;
+                    <li class="page-item @(pagina == paginaActual ? "active" : "")">
+                        <button class="page-link" @onclick="() => CambiarPagina(pagina)">@pagina</button>
+                    </li>
+                }
+
+                <li class="page-item @(paginaActual == totalPaginas ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => CambiarPagina(paginaActual + 1)">Siguiente</button>
+                </li>
+                <li class="page-item @(paginaActual == totalPaginas ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => CambiarPagina(totalPaginas)">Última</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+}
+
+@if (showModal)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@((currentUser.Id == 0) ? "Crear Persona" : "Editar Persona")</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input class="form-control" @bind="currentUser.Nombre" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Apellido</label>
+                        <input class="form-control" @bind="currentUser.Apellido" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Género</label>
+                        <select class="form-select" @bind="currentUser.Id_Genero">
+                            <option value="">Seleccione...</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo</label>
+                        <input type="email" class="form-control" @bind="currentUser.Correo" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Nacimiento</label>
+                        <input type="date" class="form-control" @bind="currentUser.FechaNacimiento" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tipo Documento</label>
+                        <select class="form-select" @bind="currentDocumento.TipoDocumentoId">
+                            <option value="">Seleccione...</option>
+                            @foreach (var tipo in TiposDocumento)
+                            {
+                                <option value="@tipo.Id">@tipo.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número Documento</label>
+                        <input class="form-control" @bind="currentDocumento.NumeroDocumento" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CloseModal">Cancelar</button>
+                    <button class="btn btn-primary" @onclick="SaveUser">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@if (showConfirmDelete)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar eliminación</h5>
+                    <button type="button" class="btn-close" @onclick="() => showConfirmDelete = false"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro que desea eliminar a @(usuarioAEliminar?.Nombre) @(usuarioAEliminar?.Apellido)?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="() => showConfirmDelete = false">Cancelar</button>
+                    <button class="btn btn-danger" @onclick="EliminarUsuario">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<PersonaDto> Usuarios = new();
+    private List<TipoDocumentoDto> TiposDocumento = new();
+
+    private PersonaDto currentUser = new();
+    private PersonaDocumentoDto currentDocumento = new();
+    private bool showModal = false;
+
+    // Variables para eliminación
+    private bool showConfirmDelete = false;
+    private PersonaDto usuarioAEliminar;
+
+    // Variables para paginación
+    private int paginaActual = 1;
+    private int registrosPorPagina = 10;
+    private int totalPaginas => (int)Math.Ceiling((double)UsuariosFiltrados.Count / registrosPorPagina);
+
+    // Variables para filtrado
+    private int filtroTipoDocumentoId = 0;
+    private string filtroNumeroDocumento = "";
+    private List<PersonaDto> UsuariosFiltrados = new();
+
+    private IEnumerable<PersonaDto> UsuariosPaginados =>
+        UsuariosFiltrados
+            .Skip((paginaActual - 1) * registrosPorPagina)
+            .Take(registrosPorPagina);
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        Usuarios = await UserService.GetUsuariosAsync();
+        TiposDocumento = await TipoDocumentoService.GetTiposDocumentoAsync();
+        AplicarFiltros();
+    }
+
+    private void AplicarFiltros()
+    {
+        UsuariosFiltrados = Usuarios.Where(u =>
+            // Filtro por tipo de documento
+            (filtroTipoDocumentoId == 0 ||
+             u.Documentos?.Any(d => d.TipoDocumentoId == filtroTipoDocumentoId) == true) &&
+
+            // Filtro por número de documento
+            (string.IsNullOrWhiteSpace(filtroNumeroDocumento) ||
+             u.Documentos?.Any(d => d.NumeroDocumento?.Contains(filtroNumeroDocumento, StringComparison.OrdinalIgnoreCase) == true) == true)
+        ).ToList();
+
+        paginaActual = 1; // Volver a la primera página al aplicar filtros
+    }
+
+    private void LimpiarFiltros()
+    {
+        filtroTipoDocumentoId = 0;
+        filtroNumeroDocumento = "";
+        AplicarFiltros();
+    }
+
+    private void CambiarPagina(int nuevaPagina)
+    {
+        if (nuevaPagina >= 1 && nuevaPagina <= totalPaginas)
+        {
+            paginaActual = nuevaPagina;
+        }
+    }
+
+    private void OpenCreateModal()
+    {
+        currentUser = new PersonaDto { FechaNacimiento = DateTime.Today };
+        currentDocumento = new PersonaDocumentoDto();
+        showModal = true;
+    }
+
+    private void OpenEditModal(PersonaDto usuario)
+    {
+        currentUser = new PersonaDto
+            {
+                Id = usuario.Id,
+                Nombre = usuario.Nombre,
+                Apellido = usuario.Apellido,
+                Id_Genero = usuario.Id_Genero,
+                Correo = usuario.Correo,
+                FechaNacimiento = usuario.FechaNacimiento,
+                Documentos = usuario.Documentos ?? new List<PersonaDocumentoDto>()
+            };
+
+        currentDocumento = usuario.Documentos?.FirstOrDefault() ?? new PersonaDocumentoDto();
+        showModal = true;
+    }
+
+    private void ConfirmarEliminar(PersonaDto usuario)
+    {
+        usuarioAEliminar = usuario;
+        showConfirmDelete = true;
+    }
+
+    private async Task EliminarUsuario()
+    {
+        if (usuarioAEliminar != null)
+        {
+            await UserService.DeleteUsuarioAsync(usuarioAEliminar.Id);
+            showConfirmDelete = false;
+            await LoadData();
+        }
+    }
+
+    private async Task SaveUser()
+    {
+        try
+        {
+            // Verificar que tenemos los datos del documento
+            if (currentDocumento.TipoDocumentoId != 0 && !string.IsNullOrEmpty(currentDocumento.NumeroDocumento))
+            {
+                // Asegurarse de que la lista de documentos esté inicializada
+                if (currentUser.Documentos == null)
+                {
+                    currentUser.Documentos = new List<PersonaDocumentoDto>();
+                }
+                else
+                {
+                    // Limpiar la lista para evitar duplicados
+                    currentUser.Documentos.Clear();
+                }
+
+                // Añadir el documento actual a la lista de documentos
+                currentUser.Documentos.Add(new PersonaDocumentoDto
+                    {
+                        PersonaId = currentUser.Id, // Esto se ignorará para nuevas personas
+                        TipoDocumentoId = currentDocumento.TipoDocumentoId,
+                        NumeroDocumento = currentDocumento.NumeroDocumento,
+                        TipoDocumentoNombre = TiposDocumento
+                                .FirstOrDefault(t => t.Id == currentDocumento.TipoDocumentoId)?.Nombre
+                    });
+            }
+
+            // Guardar la persona con sus documentos
+            if (currentUser.Id == 0)
+            {
+                // Crear nueva persona
+                var result = await UserService.CreateUsuarioAsync(currentUser);
+                if (result == null)
+                {
+                    Console.WriteLine("Error al crear la persona");
+                    return;
+                }
+            }
+            else
+            {
+                // Actualizar persona existente
+                var success = await UserService.UpdateUsuarioAsync(currentUser.Id, currentUser);
+                if (!success)
+                {
+                    Console.WriteLine("Error al actualizar la persona");
+                    return;
+                }
+            }
+
+            await LoadData();
+            CloseModal();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al guardar: {ex.Message}");
+            // Aquí podrías mostrar un mensaje de error al usuario
+        }
+    }
+
+    private void CloseModal()
+    {
+        showModal = false;
+    }
+}

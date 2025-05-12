@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SMI.Shared.Models;
 
@@ -14,4 +15,13 @@ public partial class Persona
     public string nombre { get; set; }
 
     public string apellido { get; set; }
+    public DateTime? FechaNacimiento { get; set; }
+
+    public string Correo { get; set; }
+
+    //Relacion con Usuarios
+    public ICollection<User> Usuarios { get; set; }
+
+    public ICollection<PersonaDocumento> Documentos { get; set; } = new List<PersonaDocumento>();
+
 }

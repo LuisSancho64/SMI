@@ -36,23 +36,40 @@ namespace SMI.Server.Controllers
         {
             try
             {
-                // Cambiar la condición para usar el valor booleano de "Activo"
-                var user = await _context.Usuario
-                    .FirstOrDefaultAsync(u => u.Correo == loginDto.Correo &&
-                                              u.Clave == loginDto.Clave &&
-                                              u.Activo); // Verifica si el usuario está activo
+                var usuarioDto = await _context.Usuario
+                    .AsNoTracking()
+                    .Where(u => u.Persona.Correo == loginDto.Correo &&
+                                u.Clave == loginDto.Clave &&
+                                u.Activo)
+                    .Select(u => new UsuarioDto
+                    {
+                        Id = u.Id,
+                        Activo = u.Activo,
+                        Clave = u.Clave,
+                        Persona = new PersonaDto
+                        {
+                            Id = u.Persona.id,
+                            Correo = u.Persona.Correo,
+                            Nombre = u.Persona.nombre,
+                            Apellido = u.Persona.apellido,
+                            FechaNacimiento = u.Persona.FechaNacimiento ?? DateTime.MinValue,
+                            Id_Genero = u.Persona.id_Genero ?? 0,
+                        }
+                    })
+                    .FirstOrDefaultAsync();
 
-                if (user == null)
+                if (usuarioDto == null)
                 {
                     return Unauthorized("Usuario no encontrado o no activo.");
                 }
 
-                return Ok(user);  // Puedes devolver un token o datos adicionales si es necesario
+                return Ok(usuarioDto);
             }
             catch (Exception ex)
             {
                 return BadRequest($"Error al realizar el login: {ex.Message}");
             }
         }
+
     }
 }

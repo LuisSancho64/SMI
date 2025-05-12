@@ -1,0 +1,372 @@
+﻿@page "/datospersonales"
+
+<div class="tab-container">
+    <div class="tab-buttons">
+        <button class="@(activeTab == 1 ? "active" : "")" @onclick="() => ActivateTab(1)">Datos Personales</button>
+        <button class="@(activeTab == 2 ? "active" : "")" @onclick="() => ActivateTab(2)">Datos de Residencia</button>
+        <button class="@(activeTab == 3 ? "active" : "")" @onclick="() => ActivateTab(3)">Datos Adicionales</button>
+        <button class="@(activeTab == 4 ? "active" : "")" @onclick="() => ActivateTab(4)">Datos de Contacto</button>
+    </div>
+
+    <div class="tab-content">
+        @if (activeTab == 1)
+        {
+            <EditForm Model="@personalData" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator />
+
+                <div class="personal-data-form">
+                    <h1>Datos Personales</h1>
+
+                    <div class="form-group">
+                        <h4>Tipo de Identificación</h4>
+
+                        <div class="form-field">
+                            <label>Cédula de Identidad</label>
+                            <InputText @bind-Value="personalData.TipoIdentificacion" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Primer Apellido</label>
+                            <InputText @bind-Value="personalData.PrimerApellido" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Primer Nombre</label>
+                            <InputText @bind-Value="personalData.PrimerNombre" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Estado Civil</label>
+                            <InputSelect @bind-Value="personalData.EstadoCivil" class="form-control">
+                                <option value="Soltero">Soltero</option>
+                                <option value="Casado">Casado</option>
+                                <option value="Divorciado">Divorciado</option>
+                                <option value="Viudo">Viudo</option>
+                            </InputSelect>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="form-group">
+                        <h4>Número de Identificación</h4>
+
+                        <div class="form-field">
+                            <InputText @bind-Value="personalData.NumeroIdentificacion" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Segundo Apellido</label>
+                            <InputText @bind-Value="personalData.SegundoApellido" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Segundo Nombre</label>
+                            <InputText @bind-Value="personalData.SegundoNombre" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Sexo</label>
+                            <InputSelect @bind-Value="personalData.Sexo" class="form-control">
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="Otro">Otro</option>
+                            </InputSelect>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+        else if (activeTab == 2)
+        {
+            <EditForm Model="@residenceData" OnValidSubmit="HandleResidenceSubmit">
+                <DataAnnotationsValidator />
+
+                <div class="personal-data-form">
+                    <h1>Datos de Residencia</h1>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Dirección</label>
+                            <InputText @bind-Value="residenceData.Direccion" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Ciudad</label>
+                            <InputText @bind-Value="residenceData.Ciudad" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Provincia</label>
+                            <InputText @bind-Value="residenceData.Provincia" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>País</label>
+                            <InputText @bind-Value="residenceData.Pais" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Código Postal</label>
+                            <InputText @bind-Value="residenceData.CodigoPostal" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+        else if (activeTab == 3)
+        {
+            <EditForm Model="@additionalData" OnValidSubmit="HandleAdditionalSubmit">
+                <DataAnnotationsValidator />
+
+                <div class="personal-data-form">
+                    <h1>Datos Adicionales</h1>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Profesión</label>
+                            <InputText @bind-Value="additionalData.Profesion" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Nivel de Educación</label>
+                            <InputSelect @bind-Value="additionalData.NivelEducacion" class="form-control">
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Universitaria">Universitaria</option>
+                                <option value="Postgrado">Postgrado</option>
+                            </InputSelect>
+                        </div>
+
+                        <div class="form-field">
+                            <label>Hobbies</label>
+                            <InputTextArea @bind-Value="additionalData.Hobbies" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Observaciones</label>
+                            <InputTextArea @bind-Value="additionalData.Observaciones" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+        else if (activeTab == 4)
+        {
+            <EditForm Model="@contactData" OnValidSubmit="HandleContactSubmit">
+                <DataAnnotationsValidator />
+
+                <div class="personal-data-form">
+                    <h1>Datos de Contacto</h1>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Teléfono</label>
+                            <InputText @bind-Value="contactData.Telefono" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Celular</label>
+                            <InputText @bind-Value="contactData.Celular" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Email</label>
+                            <InputText @bind-Value="contactData.Email" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Email Alternativo</label>
+                            <InputText @bind-Value="contactData.EmailAlternativo" class="form-control" />
+                        </div>
+
+                        <div class="form-field">
+                            <label>Redes Sociales</label>
+                            <InputText @bind-Value="contactData.RedesSociales" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+    </div>
+</div>
+
+@code {
+    private int activeTab = 1;
+
+    private PersonalData personalData = new PersonalData();
+    private ResidenceData residenceData = new ResidenceData();
+    private AdditionalData additionalData = new AdditionalData();
+    private ContactData contactData = new ContactData();
+
+    private void ActivateTab(int tabNumber)
+    {
+        activeTab = tabNumber;
+    }
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("Datos personales guardados");
+    }
+
+    private void HandleResidenceSubmit()
+    {
+        Console.WriteLine("Datos de residencia guardados");
+    }
+
+    private void HandleAdditionalSubmit()
+    {
+        Console.WriteLine("Datos adicionales guardados");
+    }
+
+    private void HandleContactSubmit()
+    {
+        Console.WriteLine("Datos de contacto guardados");
+    }
+
+    public class PersonalData
+    {
+        public string TipoIdentificacion { get; set; } = "Cédula de Identidad";
+        public string PrimerApellido { get; set; } = "1805569715";
+        public string PrimerNombre { get; set; } = "1805569715";
+        public string EstadoCivil { get; set; } = "Soltero";
+        public string NumeroIdentificacion { get; set; } = "1805569715";
+        public string SegundoApellido { get; set; } = "1805569715";
+        public string SegundoNombre { get; set; } = "1805569715";
+        public string Sexo { get; set; } = "Hombre";
+    }
+
+    public class ResidenceData
+    {
+        public string Direccion { get; set; }
+        public string Ciudad { get; set; }
+        public string Provincia { get; set; }
+        public string Pais { get; set; }
+        public string CodigoPostal { get; set; }
+    }
+
+    public class AdditionalData
+    {
+        public string Profesion { get; set; }
+        public string NivelEducacion { get; set; }
+        public string Hobbies { get; set; }
+        public string Observaciones { get; set; }
+    }
+
+    public class ContactData
+    {
+        public string Telefono { get; set; } = "1805569715";
+        public string Celular { get; set; } = "1805569715";
+        public string Email { get; set; }
+        public string EmailAlternativo { get; set; }
+        public string RedesSociales { get; set; }
+    }
+}
+
+<style>
+    .tab-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+    .tab-buttons {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+        .tab-buttons button {
+            padding: 10px 20px;
+            background: #f1f1f1;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 16px;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+
+            .tab-buttons button:hover {
+                background: #ddd;
+            }
+
+            .tab-buttons button.active {
+                background: #007bff;
+                color: white;
+            }
+
+    .personal-data-form {
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-field {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    select.form-control {
+        height: 38px;
+    }
+
+    hr {
+        margin: 25px 0;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            background-color: #0069d9;
+        }
+
+    .form-actions {
+        margin-top: 20px;
+        text-align: right;
+    }
+</style>

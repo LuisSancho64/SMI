@@ -1,7 +1,9 @@
-﻿using System.Net.Http;
+﻿using SMI.Shared.Models;
 using System.Net.Http.Json;
+using SMI.Shared.DTOs;
+using System.Net.Http;
 using System.Threading.Tasks;
-using SMI.Shared.Models;
+using System.Collections.Generic;
 
 namespace SMI.Client.Services
 {
@@ -14,31 +16,122 @@ namespace SMI.Client.Services
             _httpClient = httpClient;
         }
 
-        // Obtener todos los usuarios
-        public async Task<List<Persona>> GetUsuariosAsync()
+        // ------------------ CRUD de Personas ------------------
+
+        public async Task<List<PersonaDto>> GetUsuariosAsync()
         {
-            return await _httpClient.GetFromJsonAsync<List<Persona>>("api/Personas");
+            try
+            {
+                var result = await _httpClient.GetFromJsonAsync<List<PersonaDto>>("api/personas");
+                return result ?? new List<PersonaDto>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener usuarios: {ex.Message}");
+                return new List<PersonaDto>();
+            }
         }
 
-        // Crear un nuevo usuario
-        public async Task CreateUsuarioAsync(Persona persona)
+        public async Task<PersonaDto> GetUsuarioAsync(int id)
         {
-            var response = await _httpClient.PostAsJsonAsync("api/Personas", persona);
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                return await _httpClient.GetFromJsonAsync<PersonaDto>($"api/personas/{id}") ?? new PersonaDto();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener usuario: {ex.Message}");
+                return new PersonaDto();
+            }
         }
 
-        // Actualizar usuario
-        public async Task UpdateUsuarioAsync(Persona persona)
+        public async Task<PersonaDto> CreateUsuarioAsync(PersonaDto persona)
         {
-            var response = await _httpClient.PutAsJsonAsync($"api/Personas/{persona.id}", persona);
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                // Asegurarse de que la lista de documentos no sea null
+                if (persona.Documentos == null)
+                {
+                    persona.Documentos = new List<PersonaDocumentoDto>();
+                }
+
+                var response = await _httpClient.PostAsJsonAsync("api/personas", persona);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<PersonaDto>();
+                }
+
+                // Para depuración
+                var errorContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Error al crear persona: {errorContent}");
+                Console.WriteLine($"Datos enviados: {System.Text.Json.JsonSerializer.Serialize(persona)}");
+
+                response.EnsureSuccessStatusCode();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Excepción al crear persona: {ex.Message}");
+                throw;
+            }
         }
 
-        // Eliminar un usuario
-        public async Task DeleteUsuarioAsync(int id)
+        public async Task<bool> UpdateUsuarioAsync(int id, PersonaDto usuario)
         {
-            var response = await _httpClient.DeleteAsync($"api/Personas/{id}");
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                // Asegurarse de que la lista de documentos no sea null
+                if (usuario.Documentos == null)
+                {
+                    usuario.Documentos = new List<PersonaDocumentoDto>();
+                }
+
+                var response = await _httpClient.PutAsJsonAsync($"api/personas/{id}", usuario);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error al actualizar persona: {errorContent}");
+                }
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al actualizar el usuario: {ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteUsuarioAsync(int id)
+        {
+            try
+            {
+                var response = await _httpClient.DeleteAsync($"api/personas/{id}");
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al eliminar el usuario: {ex.Message}");
+                return false;
+            }
+        }
+
+        // ------------------ Tipos de Documento ------------------
+
+        public async Task<List<TipoDocumentoDto>> GetTiposDocumentoAsync()
+        {
+            try
+            {
+                var result = await _httpClient.GetFromJsonAsync<List<TipoDocumentoDto>>("api/tipodocumento");
+                return result ?? new List<TipoDocumentoDto>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener los tipos de documento: {ex.Message}");
+                return new List<TipoDocumentoDto>();
+            }
         }
     }
 }

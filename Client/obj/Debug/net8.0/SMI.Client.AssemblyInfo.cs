@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMI.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b3765900578e7532881d09d684f5c0a2d705d37")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMI.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMI.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

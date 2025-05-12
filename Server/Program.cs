@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using SMI.Server.Data;
-using SMI.Shared.Data;  // Asegúrate de importar el espacio de nombres de tu DbContext de Persona
+using SMI.Shared.Interfaces;
+using SMI.Server.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,13 +10,24 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+builder.Services.AddScoped<ITipoDocumentoService, TipoDocumentoService>();
+
 // Configurar DbContext para SGISDbContext (para el login u otro contexto general)
 builder.Services.AddDbContext<SGISDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Cadena de conexión para el login u otro
 
-// Configurar DbContext para SGISPersonDbContext (para la tabla Persona)
-builder.Services.AddDbContext<SGISPersonDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Cadena de conexión para la base de datos que usa Persona
+//CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("https://localhost:7191") // o el puerto donde corre tu Blazor WASM
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+
 
 // Crear el objeto de la aplicación
 var app = builder.Build();
@@ -34,6 +47,7 @@ app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseCors(); // Habilitar CORS
 
 app.MapRazorPages();
 app.MapControllers();

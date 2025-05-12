@@ -9,10 +9,12 @@ namespace SMI.Shared.Models
     public class User
     {
         public int Id { get; set; }
-        public string Correo { get; set; }
+    
+        public int Id_Persona { get; set; } // Relación con la tabla Persona
         public string Clave { get; set; }
         public bool Activo { get; set; }
-        // Aquí puedes agregar otros campos que correspondan a tu tabla "Usuario"
+
+        public Persona Persona { get; set; }
     }
 }
 
