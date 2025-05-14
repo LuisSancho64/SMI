@@ -22,6 +22,8 @@ public class PersonasController : ControllerBase
         var personas = await _context.Personas
             .Include(p => p.Documentos)
                 .ThenInclude(pd => pd.TipoDocumento)
+            .Include(p => p.EstadosCiviles)
+                .ThenInclude(pe => pe.EstadoCivil)
             .ToListAsync();
 
         var personasDto = personas.Select(p => new PersonaDto
@@ -32,6 +34,7 @@ public class PersonasController : ControllerBase
             Id_Genero = p.id_Genero,
             FechaNacimiento = p.FechaNacimiento,
             Correo = p.Correo,
+            EstadoCivilNombre = p.EstadosCiviles.FirstOrDefault()?.EstadoCivil?.nombre,
             Documentos = p.Documentos.Select(pd => new PersonaDocumentoDto
             {
                 TipoDocumentoId = pd.id_TipoDocumento,
@@ -50,7 +53,10 @@ public class PersonasController : ControllerBase
         var persona = await _context.Personas
             .Include(p => p.Documentos)
                 .ThenInclude(pd => pd.TipoDocumento)
+                .Include(p => p.EstadosCiviles)
+                .ThenInclude(pe => pe.EstadoCivil)
             .FirstOrDefaultAsync(p => p.id == id);
+
 
         if (persona == null)
             return NotFound();
@@ -63,6 +69,7 @@ public class PersonasController : ControllerBase
             Id_Genero = persona.id_Genero,
             FechaNacimiento = persona.FechaNacimiento,
             Correo = persona.Correo,
+            EstadoCivilNombre = persona.EstadosCiviles.FirstOrDefault()?.EstadoCivil?.nombre,
             Documentos = persona.Documentos.Select(pd => new PersonaDocumentoDto
             {
                 TipoDocumentoId = pd.id_TipoDocumento,

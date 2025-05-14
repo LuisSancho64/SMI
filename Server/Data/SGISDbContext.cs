@@ -15,6 +15,9 @@ namespace SMI.Server.Data
         public DbSet<Provincia> Provincias { get; set; }
         public DbSet<Ciudad> Ciudades { get; set; }
         public DbSet<PersonaLugarResidencia> PersonasLugaresResidencia { get; set; }
+        public DbSet<EstadoCivil> EstadosCiviles { get; set; }
+        public DbSet<PersonaEstadoCivil> PersonasEstadosCiviles { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -136,6 +139,32 @@ namespace SMI.Server.Data
                       .HasForeignKey(plr => plr.id_Ciudad)
                       .OnDelete(DeleteBehavior.Restrict);
             });
+
+            //EsatadoCivil
+            modelBuilder.Entity<EstadoCivil>(entity =>
+            {
+                entity.ToTable("EstadoCivil");
+                entity.HasKey(ec => ec.id);
+                entity.Property(ec => ec.nombre)
+                    .HasMaxLength(100)
+                    .IsRequired();
+            });
+
+            //PersonaEstadoCivil
+            modelBuilder.Entity<PersonaEstadoCivil>()
+                .ToTable("PersonaEstadoCivil")
+                .HasKey(pec => new { pec.id_Persona, pec.id_EstadoCivil });
+
+            modelBuilder.Entity<PersonaEstadoCivil>()
+                .HasOne(pec => pec.Persona)
+                .WithMany(p => p.EstadosCiviles)
+                .HasForeignKey(pec => pec.id_Persona);
+
+            modelBuilder.Entity<PersonaEstadoCivil>()
+                .HasOne(pec => pec.EstadoCivil)
+                .WithMany()
+                .HasForeignKey(pec => pec.id_EstadoCivil);
+
 
             OnModelCreatingPartial(modelBuilder);
         }

@@ -25,4 +25,7 @@ public partial class Persona
     public ICollection<PersonaDocumento> Documentos { get; set; } = new List<PersonaDocumento>();
     
     public ICollection<PersonaLugarResidencia> LugaresResidencia { get; set; }
+
+    public ICollection<PersonaEstadoCivil> EstadosCiviles { get; set; } = new List<PersonaEstadoCivil>();
+
 }

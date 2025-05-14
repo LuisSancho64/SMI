@@ -2369,6 +2369,8 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\mc5
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\a76d0n1hry-tptq2av103.gz
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\pzjsl2m35f-lfu7j35m59.gz
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\e5qni1uxjz-oyz0vx2fzb.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-jf6h251sl9.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-fmn0vilgme.gz
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -2384,8 +2386,6 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\SMI.Client.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\refint\SMI.Client.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\SMI.Client.pdb
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\ref\SMI.Client.dll
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-x1lanj8vye.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-4z39nctfvy.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-ownjvq6fjq.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-eebt7ch3qn.gz
-C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-f44h8fhsx4.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-j4l9j7ll0g.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-ynvg36ujqn.gz
+C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-qcuvr29ylg.gz

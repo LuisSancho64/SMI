@@ -9,7 +9,7 @@ public partial class PersonaEstadoCivil
 
     public int? id_EstadoCivil { get; set; }
 
-    public virtual EstadoCivil? id_EstadoCivilNavigation { get; set; }
+    public  EstadoCivil? EstadoCivil { get; set; }
 
-    public virtual Persona id_PersonaNavigation { get; set; } = null!;
+    public  Persona Persona { get; set; } = null!;
 }

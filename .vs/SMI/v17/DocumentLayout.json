@@ -7,64 +7,12 @@
       "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\personas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\personalugarresidenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\personalugarresidenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\ciudadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\ciudadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\dtos\\ciudaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\dtos\\ciudaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\dtos\\personadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\dtos\\personadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\models\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\models\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\models\\personalugarresidencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\models\\personalugarresidencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\server\\data\\sgisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC291CC3-3656-47D7-ADD7-BC93240BA186}|Server\\SMI.Server.csproj|solutionrelative:server\\data\\sgisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\shared\\dtos\\provinciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3122F799-FE1B-493C-8874-32E773F983F9}|Shared\\SMI.Shared.csproj|solutionrelative:shared\\dtos\\provinciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|c:\\users\\user\\documents\\uta\\8vo\\salud\\smi\\client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF959AB2-3296-4C65-A1E6-FC3B81A84B44}|Client\\SMI.Client.csproj|solutionrelative:client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,41 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonaLugarResidenciaController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonaLugarResidenciaController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\PersonaLugarResidenciaController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonaLugarResidenciaController.cs",
-              "RelativeToolTip": "Server\\Controllers\\PersonaLugarResidenciaController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:39:31.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CiudadController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\CiudadController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\CiudadController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\CiudadController.cs",
-              "RelativeToolTip": "Server\\Controllers\\CiudadController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwGoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:37:13.909Z",
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Home.razor",
+              "RelativeToolTip": "Client\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T03:02:48.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PersonasController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonasController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\PersonasController.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Controllers\\PersonasController.cs",
               "RelativeToolTip": "Server\\Controllers\\PersonasController.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAcwEoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAuwEcAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T00:51:04.914Z",
+              "WhenOpened": "2025-05-14T02:14:20.76Z",
               "EditorCaption": ""
             },
             {
@@ -147,157 +82,10 @@
               "RelativeDocumentMoniker": "Client\\Pages\\Personas.razor",
               "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Pages\\Personas.razor",
               "RelativeToolTip": "Client\\Pages\\Personas.razor",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAAAFEBAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAqwHEBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T22:31:02.016Z",
+              "WhenOpened": "2025-05-14T01:43:34.419Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CiudadService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Services\\CiudadService.cs",
-              "RelativeDocumentMoniker": "Server\\Services\\CiudadService.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Services\\CiudadService.cs",
-              "RelativeToolTip": "Server\\Services\\CiudadService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAwEwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:44:21.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CiudadDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\CiudadDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DTOs\\CiudadDto.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\CiudadDto.cs",
-              "RelativeToolTip": "Shared\\DTOs\\CiudadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:41:41.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PersonaDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\PersonaDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DTOs\\PersonaDto.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\PersonaDto.cs",
-              "RelativeToolTip": "Shared\\DTOs\\PersonaDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:42:18.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CiudadService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Services\\CiudadService.cs",
-              "RelativeDocumentMoniker": "Client\\Services\\CiudadService.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Services\\CiudadService.cs",
-              "RelativeToolTip": "Client\\Services\\CiudadService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:51:51.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Program.cs",
-              "RelativeDocumentMoniker": "Client\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\Program.cs",
-              "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowBMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:52:27.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Ciudad.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Ciudad.cs",
-              "RelativeDocumentMoniker": "Shared\\Models\\Ciudad.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Ciudad.cs",
-              "RelativeToolTip": "Shared\\Models\\Ciudad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:00:31.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PersonaLugarResidencia.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\PersonaLugarResidencia.cs",
-              "RelativeDocumentMoniker": "Shared\\Models\\PersonaLugarResidencia.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\PersonaLugarResidencia.cs",
-              "RelativeToolTip": "Shared\\Models\\PersonaLugarResidencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:00:48.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Provincia.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Provincia.cs",
-              "RelativeDocumentMoniker": "Shared\\Models\\Provincia.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Provincia.cs",
-              "RelativeToolTip": "Shared\\Models\\Provincia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:59:52.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:07:25.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SGISDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Data\\SGISDbContext.cs",
-              "RelativeDocumentMoniker": "Server\\Data\\SGISDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\Data\\SGISDbContext.cs",
-              "RelativeToolTip": "Server\\Data\\SGISDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBAAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:46:54.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Persona.cs",
-              "RelativeDocumentMoniker": "Shared\\Models\\Persona.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\Models\\Persona.cs",
-              "RelativeToolTip": "Shared\\Models\\Persona.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T22:01:17.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProvinciaDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\ProvinciaDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DTOs\\ProvinciaDto.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\DTOs\\ProvinciaDto.cs",
-              "RelativeToolTip": "Shared\\DTOs\\ProvinciaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:41:28.044Z"
             }
           ]
         }

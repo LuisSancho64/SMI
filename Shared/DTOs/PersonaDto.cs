@@ -13,7 +13,7 @@ namespace SMI.Shared.DTOs
         public string Apellido { get; set; }
         public int? Id_Genero { get; set; }
 
-        public string GeneroNombre { get; set; }
+        public string? GeneroNombre { get; set; }
         public string Correo { get; set; }
 
         public int Edad => FechaNacimiento.HasValue ? DateTime.Today.Year - FechaNacimiento.Value.Year : 0;
@@ -24,6 +24,9 @@ namespace SMI.Shared.DTOs
         public List<CiudadDto> CiudadesResidencia { get; set; } = new List<CiudadDto>();
 
         public List<int> CiudadesSeleccionadas { get; set; } = new List<int>();
+
+        public int IdEstadoCivil { get; set; }
+        public string? EstadoCivilNombre { get; set; }
     }
 }
 

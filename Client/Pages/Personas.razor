@@ -2,6 +2,7 @@
 @inject SMI.Client.Services.PersonaService UserService
 @inject ITipoDocumentoService TipoDocumentoService
 @inject ICiudadService CiudadService
+@inject IEstadoCivilService EstadoCivilService
 @using SMI.Shared.DTOs
 @using System.ComponentModel.DataAnnotations
 
@@ -177,7 +178,16 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="mb-3">
+                        <label class="form-label">Estado Civil</label>
+                        <select class="form-select" @bind="currentUser.IdEstadoCivil">
+                            <option value="0">Seleccione...</option>
+                            @foreach (var estado in EstadosCiviles)
+                            {
+                                <option value="@estado.id">@estado.nombre</option>
+                            }
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label class="form-label">Correo</label>
                         <input type="email" class="form-control" @bind="currentUser.Correo" />
@@ -331,9 +341,9 @@
                         Detalles del Usuario
                     </h5>
                     <button type="button"
-                            class="btn btn-danger btn-sm"
-                            style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;"
-                            @onclick="CerrarModalDetalles">
+                    class="btn btn-danger btn-sm"
+                    style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;"
+                    @onclick="CerrarModalDetalles">
                         <span style="color: white; font-size: 20px;">&times;</span>
                     </button>
                 </div>
@@ -345,19 +355,33 @@
                                     <i class="fas fa-id-card"></i> Información Personal
                                 </div>
                                 <div class="card-body">
-                                    <dl class="row">
-                                        <dt class="col-sm-4">Nombre:</dt>
-                                        <dd class="col-sm-8">@usuarioSeleccionado.Nombre @usuarioSeleccionado.Apellido</dd>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Nombre:</strong> <span>@usuarioSeleccionado.Nombre @usuarioSeleccionado.Apellido</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Género:</strong> <span>@usuarioSeleccionado.GeneroNombre</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Estado Civil:</strong> <span>@usuarioSeleccionado.EstadoCivilNombre</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Edad:</strong> <span>@usuarioSeleccionado.Edad años</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Fecha Nacimiento:</strong> <span>@usuarioSeleccionado.FechaNacimiento?.ToString("dd/MM/yyyy")</span>
+                                        </div>
+                                    </div>
 
-                                        <dt class="col-sm-4">Género:</dt>
-                                        <dd class="col-sm-8">@usuarioSeleccionado.GeneroNombre</dd>
 
-                                        <dt class="col-sm-4">Edad:</dt>
-                                        <dd class="col-sm-8">@usuarioSeleccionado.Edad años</dd>
-
-                                        <dt class="col-sm-4">Fecha Nacimiento:</dt>
-                                        <dd class="col-sm-8">@usuarioSeleccionado.FechaNacimiento?.ToString("dd/MM/yyyy")</dd>
-                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -450,6 +474,19 @@
         </div>
     </div>
 }
+<style>
+    .label-col {
+        font-weight: bold;
+        white-space: nowrap;
+        padding-right: 10px;
+        width: 140px;
+        text-align: right;
+    }
+
+    .value-col {
+        text-align: left;
+    }
+</style>
 
 
 @code {
@@ -457,6 +494,9 @@
 
     private List<PersonaDto> Usuarios = new();
     private List<TipoDocumentoDto> TiposDocumento = new();
+
+    private List<EstadoCivilDto> EstadosCiviles = new();
+
 
     private List<ProvinciaDto> Provincias = new();
     private List<CiudadDto> Ciudades = new List<CiudadDto>();
@@ -511,6 +551,8 @@
         TiposDocumento = await TipoDocumentoService.GetTiposDocumentoAsync();
         Provincias = await CiudadService.ObtenerProvincias();
 
+		await LoadEstadosCiviles();
+
         if (currentUser.Id > 0)
         {
             // Cargar las ciudades seleccionadas para la persona editada
@@ -530,6 +572,17 @@
 
         AplicarFiltros();
     }
+    private async Task LoadEstadosCiviles()
+    {
+        try
+        {
+            EstadosCiviles = await EstadoCivilService.ObtenerTodos() ?? new();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error cargando estados civiles: {ex.Message}");
+        }
+    }
 
     private async Task MostrarDetallesUsuario(PersonaDto usuario)
     {
@@ -546,6 +599,7 @@
                     FechaNacimiento = usuario.FechaNacimiento,
                     Correo = usuario.Correo,
                     Id_Genero = usuario.Id_Genero,
+					IdEstadoCivil = usuario.IdEstadoCivil,
                     Documentos = usuario.Documentos,
                     CiudadesResidencia = ciudades ?? new List<CiudadDto>(),
                     GeneroNombre = usuario.Id_Genero switch
@@ -553,7 +607,8 @@
                         1 => "Masculino",
                         2 => "Femenino",
                         _ => "No especificado"
-                    }
+                    },
+					EstadoCivilNombre = usuario.EstadoCivilNombre
                 };
         }
         catch (Exception ex)
@@ -654,6 +709,7 @@
                     Apellido = usuario.Apellido,
                     Id_Genero = usuario.Id_Genero,
                     Correo = usuario.Correo,
+					IdEstadoCivil = await EstadoCivilService.ObtenerEstadoCivilDePersona(usuario.Id)??0,
                     FechaNacimiento = usuario.FechaNacimiento,
                     Documentos = usuario.Documentos?.ToList() ?? new List<PersonaDocumentoDto>()
                 };
@@ -733,6 +789,10 @@
             };
             }
 
+            //Eliminar los campos GeneroNombre y EstadoCivilNombre
+			currentUser.GeneroNombre = null;
+			currentUser.EstadoCivilNombre = null;
+
             // Guardar persona
             int personaId;
             if (currentUser.Id == 0)
@@ -745,6 +805,7 @@
                 await UserService.UpdateUsuarioAsync(currentUser.Id, currentUser);
                 personaId = currentUser.Id;
             }
+
 
             // Guardar ciudades de residencia solo si hay seleccionadas
             if (personaId > 0 && CiudadesSeleccionadas.Any(c => c.Id > 0))
@@ -763,6 +824,13 @@
                 }
             }
 
+			//Guardar estado civil
+            if (currentUser.IdEstadoCivil > 0)
+            {
+                await EstadoCivilService.GuardarEstadoCivilPersona(
+                    currentUser.Id,
+                    currentUser.IdEstadoCivil);
+            }
             await LoadData();
             CloseModal();
         }
