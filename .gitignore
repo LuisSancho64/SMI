@@ -1,0 +1,27 @@
+# Archivos de configuración de Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Archivos temporales y de build
+bin/
+obj/
+Client/bin/
+Client/obj/
+Server/bin/
+Server/obj/
+
+# Archivos de publicación y paquetes
+*.nupkg
+*.snupkg
+*.publish.xml
+*.pubxml
+
+# WebAssembly framework cache
+wwwroot/_framework/
+Client/wwwroot/_framework/
+
+# Otros
+*.log
+.idea/

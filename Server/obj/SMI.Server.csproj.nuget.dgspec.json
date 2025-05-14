@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\SMI.Server.csproj": {}
+    "C:\\Users\\4ndre\\source\\repos\\SMI\\Server\\SMI.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\SMI.Client.csproj": {
+    "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\SMI.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\SMI.Client.csproj",
+        "projectUniqueName": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\SMI.Client.csproj",
         "projectName": "SMI.Client",
-        "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\SMI.Client.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\obj\\",
+        "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\SMI.Client.csproj",
+        "packagesPath": "C:\\Users\\4ndre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\4ndre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj"
+              "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj": {
+                "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj"
               }
             }
           }
@@ -47,8 +48,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -84,7 +84,7 @@
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[8.0.15, )",
               "autoReferenced": true
             },
             "System.IdentityModel.Tokens.Jwt": {
@@ -103,18 +103,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -123,20 +117,20 @@
         }
       }
     },
-    "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\SMI.Server.csproj": {
+    "C:\\Users\\4ndre\\source\\repos\\SMI\\Server\\SMI.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\SMI.Server.csproj",
+        "projectUniqueName": "C:\\Users\\4ndre\\source\\repos\\SMI\\Server\\SMI.Server.csproj",
         "projectName": "SMI.Server",
-        "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\SMI.Server.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Server\\obj\\",
+        "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Server\\SMI.Server.csproj",
+        "packagesPath": "C:\\Users\\4ndre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\4ndre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -145,17 +139,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\SMI.Client.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Client\\SMI.Client.csproj"
+              "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\SMI.Client.csproj": {
+                "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\SMI.Client.csproj"
               },
-              "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj"
+              "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj": {
+                "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj"
               }
             }
           }
@@ -169,8 +164,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -232,24 +226,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj": {
+    "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj",
         "projectName": "SMI.Shared",
-        "projectPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\SMI.Shared.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\UTA\\8vo\\Salud\\SMI\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\SMI.Shared.csproj",
+        "packagesPath": "C:\\Users\\4ndre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\4ndre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -258,6 +252,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -275,8 +270,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -307,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
