@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Components
+@inject NavigationManager Navigation
+
+<div class="card tarjeta-modulo h-100">
+    <div class="card-header text-center tarjeta-titulo">
+        <h5 class="mb-0">@Titulo</h5>
+    </div>
+    <div class="tarjeta-imagen">
+        @if (!string.IsNullOrWhiteSpace(ImagenUrl))
+        {
+            <img src="@ImagenUrl" alt="@Titulo" class="img-fluid tarjeta-img" />
+        }
+        else
+        {
+            <div class="imagen-placeholder">
+                <span class="oi oi-image"></span>
+            </div>
+        }
+    </div>
+    <div class="card-body text-center p-3">
+        <p class="card-text tarjeta-descripcion">@Descripcion</p>
+    </div>
+    <div class="card-footer text-center bg-white border-top-0 pb-3">
+        <button class="btn btn-primary tarjeta-btn" @onclick="NavigateToRoute">INGRESAR</button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Titulo { get; set; }
+    [Parameter] public string ImagenUrl { get; set; } = "";
+    [Parameter] public string Descripcion { get; set; } = "Haga clic para acceder";
+    [Parameter] public string Ruta { get; set; }
+
+    private void NavigateToRoute()
+    {
+        Navigation.NavigateTo(Ruta);
+    }
+}
