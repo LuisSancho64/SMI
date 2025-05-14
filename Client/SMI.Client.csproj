@@ -24,5 +24,6 @@
 
 	<ItemGroup>
 	  <None Include="wwwroot\css\tabcontainer.css" />
+	  <None Include="wwwroot\css\tarjeta.css" />
 	</ItemGroup>
 </Project>

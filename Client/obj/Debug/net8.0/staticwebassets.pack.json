@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\css\\tabcontainer.css"
     },
     {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\tarjeta.css",
+      "PackagePath": "staticwebassets\\css\\tarjeta.css"
+    },
+    {
       "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -73,8 +77,40 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\atencionmedica.png",
+      "PackagePath": "staticwebassets\\images\\atencionmedica.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\enfermeria.png",
+      "PackagePath": "staticwebassets\\images\\enfermeria.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\estimulaciontemprana.png",
+      "PackagePath": "staticwebassets\\images\\estimulaciontemprana.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\fisioterapia.png",
+      "PackagePath": "staticwebassets\\images\\fisioterapia.png"
+    },
+    {
       "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\fondologin.jpg",
       "PackagePath": "staticwebassets\\images\\fondologin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\historiaclinica.png",
+      "PackagePath": "staticwebassets\\images\\historiaclinica.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\nutricion.png",
+      "PackagePath": "staticwebassets\\images\\nutricion.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\psicologia.png",
+      "PackagePath": "staticwebassets\\images\\psicologia.png"
+    },
+    {
+      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\images\\usuario.png",
+      "PackagePath": "staticwebassets\\images\\usuario.png"
     },
     {
       "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\index.html",
