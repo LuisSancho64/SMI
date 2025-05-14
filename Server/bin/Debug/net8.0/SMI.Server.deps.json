@@ -2005,7 +2005,7 @@
         },
         "runtime": {
           "SMI.Client.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2017,7 +2017,7 @@
         },
         "runtime": {
           "SMI.Shared.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

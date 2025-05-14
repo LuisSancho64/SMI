@@ -1,60 +1,71 @@
 ﻿@page "/home"
-<h3>Home</h3>
+@using SMI.Client.Components
+<link rel="stylesheet" href="Components/css/tarjeta.css" />
 
-<div class="card-grid">
-    @for (int i = 0; i < 6; i++)
-    {
-        <div class="card">
-            <div class="image-placeholder">[Imagen]</div>
-            <h4>Título</h4>
-            <p>Información</p>
-            <button>Button</button>
+<div class="container py-4">
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h2 class="titulo-sistema">Sistema Integrado de Medicina</h2>
+            <p class="subtitulo-sistema">Seleccione el módulo al que desea acceder</p>
+            <div class="separador-sistema"></div>
         </div>
-    }
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <Tarjeta Titulo="Usuarios"
+                     ImagenUrl="/images/usuarios.png"
+                     Descripcion="Gestión de usuarios y permisos del sistema"
+                     Ruta="/personas" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Historia Clínica"
+                     ImagenUrl="/images/historia.png"
+                     Descripcion="Consulta y registro de historias clínicas"
+                     Ruta="/historia-clinica" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Atención Médica"
+                     ImagenUrl="/images/atencion.png"
+                     Descripcion="Registro de consultas y atenciones médicas"
+                     Ruta="/citas" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Nutrición"
+                     ImagenUrl="/images/nutricion.png"
+                     Descripcion="Evaluación y seguimiento nutricional"
+                     Ruta="/nutricion" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Enfermería"
+                     ImagenUrl="/images/enfermeria.png"
+                     Descripcion="Servicios y procedimientos de enfermería"
+                     Ruta="/enfermeria" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Psicología"
+                     ImagenUrl="/images/psicologia.png"
+                     Descripcion="Consultas y evaluaciones psicológicas"
+                     Ruta="/psicologia" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Estimulación Temprana"
+                     ImagenUrl="/images/estimulacion.png"
+                     Descripcion="Programas de estimulación infantil"
+                     Ruta="/estimulacion-temprana" />
+        </div>
+
+        <div class="col">
+            <Tarjeta Titulo="Fisioterapia"
+                     ImagenUrl="/images/fisioterapia.png"
+                     Descripcion="Tratamientos y terapias de rehabilitación"
+                     Ruta="/fisioterapia" />
+        </div>
+    </div>
 </div>
-
-<style>
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .card {
-        border: 1px solid #ccc;
-        padding: 15px;
-        text-align: center;
-        border-radius: 8px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .image-placeholder {
-        width: 100%;
-        height: 100px;
-        background-color: #eee;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    h4 {
-        margin: 10px 0 5px;
-    }
-
-    p {
-        margin: 0 0 10px;
-    }
-
-    button {
-        padding: 8px 12px;
-        border: 1px solid #000;
-        background-color: white;
-        cursor: pointer;
-    }
-
-        button:hover {
-            background-color: #f0f0f0;
-        }
-</style>

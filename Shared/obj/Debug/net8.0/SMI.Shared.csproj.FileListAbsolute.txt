@@ -23,3 +23,4 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Shared\obj\Debug\net8.0\SMI.Shared.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Shared\obj\Debug\net8.0\refint\SMI.Shared.dll
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Shared\obj\Debug\net8.0\SMI.Shared.pdb
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Shared\obj\Debug\net8.0\ref\SMI.Shared.dll
+C:\Users\4ndre\source\repos\SMI\Shared\obj\Debug\net8.0\SMI.Shared.sourcelink.json

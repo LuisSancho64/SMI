@@ -2389,3 +2389,14 @@ C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\ref\SMI.Client
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-j4l9j7ll0g.gz
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-ynvg36ujqn.gz
 C:\Users\User\Documents\UTA\8vo\Salud\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-qcuvr29ylg.gz
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.wasm
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Bcl.Memory.wasm
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.wasm.gz
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Bcl.Memory.wasm.gz
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\4ndre\source\repos\SMI\Client\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\SMI.Client.sourcelink.json
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Authorization.wasm
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\webcil\Microsoft.Bcl.Memory.wasm
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\fhrj15vfif.gz
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\l42v3thu59.gz
