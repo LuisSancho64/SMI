@@ -23,5 +23,6 @@ public partial class Persona
     public ICollection<User> Usuarios { get; set; }
 
     public ICollection<PersonaDocumento> Documentos { get; set; } = new List<PersonaDocumento>();
-
+    
+    public ICollection<PersonaLugarResidencia> LugaresResidencia { get; set; }
 }

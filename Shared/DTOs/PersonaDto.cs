@@ -17,6 +17,8 @@ namespace SMI.Shared.DTOs
 
         // Nueva propiedad para documentos asociados
         public List<PersonaDocumentoDto> Documentos { get; set; } = new List<PersonaDocumentoDto>();
+
+        public List<int> CiudadesSeleccionadas { get; set; } = new List<int>();
     }
 }
 

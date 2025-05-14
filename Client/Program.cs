@@ -15,6 +15,7 @@ builder.Services.AddScoped<AuthorizationMessageHandler>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITipoDocumentoService, TipoDocumentoService>();
 builder.Services.AddScoped<PersonaService>();
+builder.Services.AddScoped<ICiudadService, CiudadService>();
 
 builder.Services.AddScoped<LocalStorageService>();
 

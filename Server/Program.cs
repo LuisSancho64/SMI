@@ -50,6 +50,8 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddDbContext<SGISDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Cadena de conexión para el login u otro
 
+builder.Services.AddScoped<ICiudadService, CiudadService>();
+
 //CORS
 builder.Services.AddCors(options =>
 {

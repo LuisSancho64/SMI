@@ -12,6 +12,9 @@ namespace SMI.Server.Data
         public DbSet<Persona> Personas { get; set; }
         public DbSet<TipoDocumento> TipoDocumentos { get; set; }
         public DbSet<PersonaDocumento> PersonaDocumentos { get; set; }
+        public DbSet<Provincia> Provincias { get; set; }
+        public DbSet<Ciudad> Ciudades { get; set; }
+        public DbSet<PersonaLugarResidencia> PersonasLugaresResidencia { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -91,6 +94,48 @@ namespace SMI.Server.Data
                 .WithMany(td => td.PersonaDocumentos)
                 .HasForeignKey(pd => pd.id_TipoDocumento);
 
+            //Provincia
+            modelBuilder.Entity<Provincia>(entity =>
+            {
+                entity.ToTable("Provincia");
+                entity.HasKey(p => p.id);
+                entity.Property(p => p.nombre)
+                       .HasMaxLength(100)
+                       .IsRequired();
+            });
+
+            //Ciudad
+            modelBuilder.Entity<Ciudad>(entity =>
+            {
+                entity.ToTable("Ciudad");
+                entity.HasKey(c => c.id);
+                entity.Property(c => c.nombre)
+                       .HasMaxLength(100)
+                       .IsRequired();
+
+                entity.HasOne(c => c.Provincia)
+                      .WithMany(p => p.Ciudades)
+                      .HasForeignKey(c => c.id_Provincia)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
+
+            // PersonaLugarResidencia
+            modelBuilder.Entity<PersonaLugarResidencia>(entity =>
+            {
+                entity.ToTable("PersonaLugarResidencia");
+                entity.HasKey(plr => new { plr.id_Persona, plr.id_Ciudad });
+
+                entity.HasOne(plr => plr.Persona)
+                      .WithMany(p => p.LugaresResidencia)
+                      .HasForeignKey(plr => plr.id_Persona)
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(plr => plr.Ciudad)
+                      .WithMany()
+                      .HasForeignKey(plr => plr.id_Ciudad)
+                      .OnDelete(DeleteBehavior.Restrict);
+            });
 
             OnModelCreatingPartial(modelBuilder);
         }

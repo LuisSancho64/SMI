@@ -1,6 +1,7 @@
 ﻿@page "/personas"
 @inject SMI.Client.Services.PersonaService UserService
 @inject ITipoDocumentoService TipoDocumentoService
+@inject ICiudadService CiudadService
 @using SMI.Shared.DTOs
 @using System.ComponentModel.DataAnnotations
 
@@ -132,54 +133,140 @@
 @if (showModal)
 {
     <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg"> <!-- Aumenté el tamaño a modal-lg para más espacio -->
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">@((currentUser.Id == 0) ? "Crear Persona" : "Editar Persona")</h5>
                     <button type="button" class="btn-close" @onclick="CloseModal"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label class="form-label">Nombre</label>
-                        <input class="form-control" @bind="currentUser.Nombre" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input class="form-control" @bind="currentUser.Nombre" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Apellido</label>
+                                <input class="form-control" @bind="currentUser.Apellido" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Apellido</label>
-                        <input class="form-control" @bind="currentUser.Apellido" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Género</label>
+                                <select class="form-select" @bind="currentUser.Id_Genero">
+                                    <option value="">Seleccione...</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Fecha Nacimiento</label>
+                                <input type="date" class="form-control" @bind="currentUser.FechaNacimiento" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Género</label>
-                        <select class="form-select" @bind="currentUser.Id_Genero">
-                            <option value="">Seleccione...</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
-                        </select>
-                    </div>
+
                     <div class="mb-3">
                         <label class="form-label">Correo</label>
                         <input type="email" class="form-control" @bind="currentUser.Correo" />
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Fecha Nacimiento</label>
-                        <input type="date" class="form-control" @bind="currentUser.FechaNacimiento" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Tipo Documento</label>
+                                <select class="form-select" @bind="currentDocumento.TipoDocumentoId">
+                                    <option value="">Seleccione...</option>
+                                    @foreach (var tipo in TiposDocumento)
+                                    {
+                                        <option value="@tipo.Id">@tipo.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Número Documento</label>
+                                <input class="form-control" maxlength="10" @bind="currentDocumento.NumeroDocumento" />
+                                @if (showError)
+                                {
+                                    <div class="text-danger mt-1">@errorMessage</div>
+                                }
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Tipo Documento</label>
-                        <select class="form-select" @bind="currentDocumento.TipoDocumentoId">
-                            <option value="">Seleccione...</option>
-                            @foreach (var tipo in TiposDocumento)
+                    <!-- Sección de Provincia y Ciudad -->
+                    <div class="card mb-3">
+                        <div class="card-header">Lugar(es) de Residencia</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Provincia</label>
+                                        <select class="form-select" @bind="selectedProvinciaId">
+                                            <option value="0">Seleccione una provincia</option>
+                                            @foreach (var provincia in Provincias)
+                                            {
+                                                <option value="@provincia.Id">@provincia.Nombre</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Ciudad</label>
+                                        @if (Ciudades.Any())
+                                        {
+                                            <select class="form-select" @bind="selectedCiudadId">
+                                                <option value="0">Seleccione una ciudad</option>
+                                                @foreach (var ciudad in Ciudades)
+                                                {
+                                                    <option value="@ciudad.Id">@ciudad.Nombre</option>
+                                                }
+                                            </select>
+                                        }
+                                        else
+                                        {
+                                            <div class="alert alert-info mt-2">
+                                                Seleccione una provincia primero
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-sm btn-outline-primary"
+                            @onclick="AddCiudad" disabled="@(selectedCiudadId == 0)">
+                                <i class="fas fa-plus"></i> Añadir Ciudad
+                            </button>
+
+                            @if (CiudadesSeleccionadas.Any())
                             {
-                                <option value="@tipo.Id">@tipo.Nombre</option>
+                                <div class="mt-3">
+                                    <h6>Ciudades seleccionadas:</h6>
+                                    <ul class="list-group">
+                                        @foreach (var ciudad in CiudadesSeleccionadas)
+                                        {
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                @ciudad.Nombre
+                                                <button type="button" class="btn btn-sm btn-outline-danger"
+                                                @onclick="(() => RemoveCiudad(ciudad.Id))">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
                             }
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Número Documento</label>
-                        <input class="form-control" maxlength="10" @bind="currentDocumento.NumeroDocumento" />
-                        @if (showError)
-                        {
-                            <div class="text-danger mt-1">@errorMessage</div>
-                        }
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -230,9 +317,16 @@
 
 
 
+
 @code {
     private List<PersonaDto> Usuarios = new();
     private List<TipoDocumentoDto> TiposDocumento = new();
+
+    private List<ProvinciaDto> Provincias = new();
+    private List<CiudadDto> Ciudades = new List<CiudadDto>();
+    private List<CiudadDto> CiudadesSeleccionadas = new List<CiudadDto>();
+    private int _selectedProvinciaId = 0;
+    private int selectedCiudadId = 0;
 
     private PersonaDto currentUser = new();
     private PersonaDocumentoDto currentDocumento = new();
@@ -240,7 +334,6 @@
 
     private bool showError = false;
     private string errorMessage;
-
 
     // Variables para eliminación
     private bool showConfirmDelete = false;
@@ -266,21 +359,83 @@
         await LoadData();
     }
 
+    private int selectedProvinciaId
+    {
+        get => _selectedProvinciaId;
+        set
+        {
+            _selectedProvinciaId = value;
+            _ = LoadCiudadesAsync(); // Llamar a LoadCiudades de forma asíncrona
+        }
+    }
+
     private async Task LoadData()
     {
         Usuarios = await UserService.GetUsuariosAsync();
         TiposDocumento = await TipoDocumentoService.GetTiposDocumentoAsync();
+        Provincias = await CiudadService.ObtenerProvincias();
+
+        if (currentUser.Id > 0)
+        {
+            // Cargar las ciudades seleccionadas para la persona editada
+            CiudadesSeleccionadas = await CiudadService.ObtenerCiudadesPorPersona(currentUser.Id);
+
+            // Si hay ciudades seleccionadas, cargar la provincia correspondiente
+            if (CiudadesSeleccionadas.Any())
+            {
+                var primeraCiudad = await CiudadService.ObtenerCiudad(CiudadesSeleccionadas.First().Id);
+                if (primeraCiudad != null)
+                {
+                    _selectedProvinciaId = primeraCiudad.IdProvincia;
+                    await LoadCiudadesAsync();
+                }
+            }
+        }
+
         AplicarFiltros();
+    }
+
+    private async Task LoadCiudadesAsync()
+    {
+        if (_selectedProvinciaId > 0)
+        {
+            Ciudades = await CiudadService.ObtenerCiudadesPorProvincia(_selectedProvinciaId);
+        }
+        else
+        {
+            Ciudades = new List<CiudadDto>();
+        }
+        selectedCiudadId = 0;
+        StateHasChanged();
+    }
+
+    private void AddCiudad()
+    {
+        if (selectedCiudadId > 0 && !CiudadesSeleccionadas.Any(c => c.Id == selectedCiudadId))
+        {
+            var ciudadToAdd = Ciudades.FirstOrDefault(c => c.Id == selectedCiudadId);
+            if (ciudadToAdd != null)
+            {
+                CiudadesSeleccionadas.Add(ciudadToAdd);
+                selectedCiudadId = 0;
+            }
+        }
+    }
+
+    private void RemoveCiudad(int ciudadId)
+    {
+        var ciudadToRemove = CiudadesSeleccionadas.FirstOrDefault(c => c.Id == ciudadId);
+        if (ciudadToRemove != null)
+        {
+            CiudadesSeleccionadas.Remove(ciudadToRemove);
+        }
     }
 
     private void AplicarFiltros()
     {
         UsuariosFiltrados = Usuarios.Where(u =>
-            // Filtro por tipo de documento
             (filtroTipoDocumentoId == 0 ||
              u.Documentos?.Any(d => d.TipoDocumentoId == filtroTipoDocumentoId) == true) &&
-
-            // Filtro por número de documento
             (string.IsNullOrWhiteSpace(filtroNumeroDocumento) ||
              u.Documentos?.Any(d => d.NumeroDocumento?.Contains(filtroNumeroDocumento, StringComparison.OrdinalIgnoreCase) == true) == true)
         ).ToList();
@@ -305,26 +460,61 @@
 
     private void OpenCreateModal()
     {
-        currentUser = new PersonaDto { FechaNacimiento = DateTime.Today };
+        currentUser = new PersonaDto
+            {
+                FechaNacimiento = DateTime.Today,
+                Documentos = new List<PersonaDocumentoDto>()
+            };
         currentDocumento = new PersonaDocumentoDto();
+        CiudadesSeleccionadas = new List<CiudadDto>();
+        _selectedProvinciaId = 0;
+        selectedCiudadId = 0;
         showModal = true;
     }
 
-    private void OpenEditModal(PersonaDto usuario)
+    private async Task OpenEditModal(PersonaDto usuario)
     {
-        currentUser = new PersonaDto
-            {
-                Id = usuario.Id,
-                Nombre = usuario.Nombre,
-                Apellido = usuario.Apellido,
-                Id_Genero = usuario.Id_Genero,
-                Correo = usuario.Correo,
-                FechaNacimiento = usuario.FechaNacimiento,
-                Documentos = usuario.Documentos ?? new List<PersonaDocumentoDto>()
-            };
+        try
+        {
+            currentUser = new PersonaDto
+                {
+                    Id = usuario.Id,
+                    Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
+                    Id_Genero = usuario.Id_Genero,
+                    Correo = usuario.Correo,
+                    FechaNacimiento = usuario.FechaNacimiento,
+                    Documentos = usuario.Documentos?.ToList() ?? new List<PersonaDocumentoDto>()
+                };
 
-        currentDocumento = usuario.Documentos?.FirstOrDefault() ?? new PersonaDocumentoDto();
-        showModal = true;
+            currentDocumento = currentUser.Documentos.FirstOrDefault() ?? new PersonaDocumentoDto();
+
+            // Cargar ciudades de residencia (maneja el caso de 404)
+            CiudadesSeleccionadas = await CiudadService.ObtenerCiudadesPorPersona(currentUser.Id);
+
+            // Si hay ciudades, cargar la provincia correspondiente
+            if (CiudadesSeleccionadas.Any())
+            {
+                var primeraCiudadId = CiudadesSeleccionadas.First().Id;
+                if (primeraCiudadId > 0)
+                {
+                    var primeraCiudad = await CiudadService.ObtenerCiudad(primeraCiudadId);
+
+                    if (primeraCiudad != null)
+                    {
+						_selectedProvinciaId = primeraCiudad.IdProvincia;
+						await LoadCiudadesAsync();
+                    }
+                }
+            }
+            
+            showModal = true;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al abrir modal de edición: {ex.Message}");
+        }
     }
 
     private void ConfirmarEliminar(PersonaDto usuario)
@@ -347,62 +537,57 @@
     {
         try
         {
-			showError = false;
+            showError = false;
 
-            // Verificar que tenemos los datos del documento
+            // Validación de documento
             if (currentDocumento.TipoDocumentoId != 0 && !string.IsNullOrEmpty(currentDocumento.NumeroDocumento))
             {
-                //Validar la cedula si el tipo de documento es cédula de identidad
-                if (currentDocumento.TipoDocumentoId == 1)
+                if (currentDocumento.TipoDocumentoId == 1 && !ValidarCedula(currentDocumento.NumeroDocumento))
                 {
-                    if (!ValidarCedula(currentDocumento.NumeroDocumento))
-                    {
-                        errorMessage = "Número de cédula inválido";
-                        showError = true;
-                        return;
-                    }
-                }
-                // Asegurarse de que la lista de documentos esté inicializada
-                if (currentUser.Documentos == null)
-                {
-                    currentUser.Documentos = new List<PersonaDocumentoDto>();
-                }
-                else
-                {
-                    currentUser.Documentos ??= new List<PersonaDocumentoDto>();
-                    // Limpiar la lista para evitar duplicados
-                    currentUser.Documentos.Clear();
-                }
-
-                // Añadir el documento actual a la lista de documentos
-                currentUser.Documentos.Add(new PersonaDocumentoDto
-                    {
-                        PersonaId = currentUser.Id,
-                        TipoDocumentoId = currentDocumento.TipoDocumentoId,
-                        NumeroDocumento = currentDocumento.NumeroDocumento,
-                        TipoDocumentoNombre = TiposDocumento
-                                .FirstOrDefault(t => t.Id == currentDocumento.TipoDocumentoId)?.Nombre
-                    });
-            }
-
-            // Guardar la persona con sus documentos
-            if (currentUser.Id == 0)
-            {
-                // Crear nueva persona
-                var result = await UserService.CreateUsuarioAsync(currentUser);
-                if (result == null)
-                {
-                    Console.WriteLine("Error al crear la persona");
+                    errorMessage = "Número de cédula inválido";
+                    showError = true;
                     return;
                 }
+
+                currentUser.Documentos = new List<PersonaDocumentoDto>
+            {
+                new PersonaDocumentoDto
+                {
+                    PersonaId = currentUser.Id,
+                    TipoDocumentoId = currentDocumento.TipoDocumentoId,
+                    NumeroDocumento = currentDocumento.NumeroDocumento,
+                    TipoDocumentoNombre = TiposDocumento
+                        .FirstOrDefault(t => t.Id == currentDocumento.TipoDocumentoId)?.Nombre
+                }
+            };
+            }
+
+            // Guardar persona
+            int personaId;
+            if (currentUser.Id == 0)
+            {
+                var nuevaPersona = await UserService.CreateUsuarioAsync(currentUser);
+                personaId = nuevaPersona.Id;
             }
             else
             {
-                // Actualizar persona existente
-                var success = await UserService.UpdateUsuarioAsync(currentUser.Id, currentUser);
-                if (!success)
+                await UserService.UpdateUsuarioAsync(currentUser.Id, currentUser);
+                personaId = currentUser.Id;
+            }
+
+            // Guardar ciudades de residencia solo si hay seleccionadas
+            if (personaId > 0 && CiudadesSeleccionadas.Any(c => c.Id > 0))
+            {
+                var ciudadIds = CiudadesSeleccionadas
+                    .Where(c => c.Id > 0)
+                    .Select(c => c.Id)
+                    .ToList();
+
+                var resultado = await CiudadService.GuardarLugaresResidencia(personaId, ciudadIds);
+                if (!resultado)
                 {
-                    Console.WriteLine("Error al actualizar la persona");
+                    errorMessage = "Error al guardar lugares de residencia";
+                    showError = true;
                     return;
                 }
             }
@@ -412,13 +597,21 @@
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error al guardar: {ex.Message}");
+            errorMessage = $"Error al guardar: {ex.Message}";
+            showError = true;
+            Console.WriteLine(errorMessage);
         }
     }
 
     private void CloseModal()
     {
         showModal = false;
+        currentUser = new PersonaDto();
+        currentDocumento = new PersonaDocumentoDto();
+        CiudadesSeleccionadas = new List<CiudadDto>();
+        _selectedProvinciaId = 0;
+        selectedCiudadId = 0;
+        showError = false;
     }
 
     private bool ValidarCedula(string cedula)
