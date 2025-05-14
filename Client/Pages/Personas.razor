@@ -76,6 +76,10 @@
                     <td>@(usuario.Documentos?.FirstOrDefault()?.NumeroDocumento ?? "N/A")</td>
                     <td>
                         <div class="btn-group" role="group">
+                            <button @onclick="() => MostrarDetallesUsuario(usuario)"
+                            class="btn btn-sm btn-info">
+                                <i class="fas fa-eye"></i> Ver
+                            </button>
                             <button class="btn btn-sm btn-warning" @onclick="@(() => OpenEditModal(usuario))">
                                 <i class="bi bi-pencil"></i> Editar
                             </button>
@@ -315,10 +319,142 @@
     </div>
 }
 
+@* Modal de detalles *@
+@if (usuarioSeleccionado != null)
+{
+    <div class="modal fade show" style="display: block; background-color: rgba(0,0,0,0.5);" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-user-circle mr-2"></i>
+                        Detalles del Usuario
+                    </h5>
+                    <button type="button"
+                            class="btn btn-danger btn-sm"
+                            style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;"
+                            @onclick="CerrarModalDetalles">
+                        <span style="color: white; font-size: 20px;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header bg-light">
+                                    <i class="fas fa-id-card"></i> Información Personal
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Nombre:</dt>
+                                        <dd class="col-sm-8">@usuarioSeleccionado.Nombre @usuarioSeleccionado.Apellido</dd>
 
+                                        <dt class="col-sm-4">Género:</dt>
+                                        <dd class="col-sm-8">@usuarioSeleccionado.GeneroNombre</dd>
+
+                                        <dt class="col-sm-4">Edad:</dt>
+                                        <dd class="col-sm-8">@usuarioSeleccionado.Edad años</dd>
+
+                                        <dt class="col-sm-4">Fecha Nacimiento:</dt>
+                                        <dd class="col-sm-8">@usuarioSeleccionado.FechaNacimiento?.ToString("dd/MM/yyyy")</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header bg-light">
+                                    <i class="fas fa-envelope"></i> Contacto
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Correo:</dt>
+                                        <dd class="col-sm-8">@usuarioSeleccionado.Correo</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @* Documentos *@
+                    <div class="card mb-3">
+                        <div class="card-header bg-light">
+                            <i class="fas fa-file-alt"></i> Documentos
+                        </div>
+                        <div class="card-body">
+                            @if (usuarioSeleccionado.Documentos?.Any() == true)
+                            {
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Tipo</th>
+                                            <th>Número</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var doc in usuarioSeleccionado.Documentos)
+                                        {
+                                            <tr>
+                                                <td>@doc.TipoDocumentoNombre</td>
+                                                <td>@doc.NumeroDocumento</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                            else
+                            {
+                                <p class="text-muted">No hay documentos registrados</p>
+                            }
+                        </div>
+                    </div>
+
+                    @* Sección de Ciudades de Residencia *@
+                    <div class="card mt-3">
+                        <div class="card-header bg-light">
+                            <i class="fas fa-map-marker-alt"></i> Ciudades de Residencia
+                        </div>
+                        <div class="card-body">
+                            @if (usuarioSeleccionado.CiudadesResidencia != null && usuarioSeleccionado.CiudadesResidencia.Any())
+                            {
+                                <ul class="list-group">
+                                    @foreach (var ciudad in usuarioSeleccionado.CiudadesResidencia)
+                                    {
+                                        <li class="list-group-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="fas fa-city text-primary mr-2"></i>
+                                                    <strong>@ciudad.Nombre</strong>
+                                                </div>
+                                                <span class="text-muted">@ciudad.NombreProvincia</span>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info mb-0">
+                                    No se han registrado ciudades de residencia
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CerrarModalDetalles">
+                        <i class="fas fa-times"></i> Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 
 @code {
+    private PersonaDto usuarioSeleccionado = null;
+
     private List<PersonaDto> Usuarios = new();
     private List<TipoDocumentoDto> TiposDocumento = new();
 
@@ -393,6 +529,41 @@
         }
 
         AplicarFiltros();
+    }
+
+    private async Task MostrarDetallesUsuario(PersonaDto usuario)
+    {
+        try
+        {
+            var ciudades = await CiudadService.ObtenerCiudadesPorPersona(usuario.Id);
+
+            // Reemplaza la sintaxis 'with' por esta:
+            usuarioSeleccionado = new PersonaDto
+                {
+                    Id = usuario.Id,
+                    Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
+                    FechaNacimiento = usuario.FechaNacimiento,
+                    Correo = usuario.Correo,
+                    Id_Genero = usuario.Id_Genero,
+                    Documentos = usuario.Documentos,
+                    CiudadesResidencia = ciudades ?? new List<CiudadDto>(),
+                    GeneroNombre = usuario.Id_Genero switch
+                    {
+                        1 => "Masculino",
+                        2 => "Femenino",
+                        _ => "No especificado"
+                    }
+                };
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al cargar detalles: {ex.ToString()}");
+        }
+    }
+    private void CerrarModalDetalles()
+    {
+        usuarioSeleccionado = null;
     }
 
     private async Task LoadCiudadesAsync()

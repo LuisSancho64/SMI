@@ -73,8 +73,6 @@ public class PersonasController : ControllerBase
 
         return personaDto;
     }
-
-    // PUT: api/Personas/5
     // PUT: api/Personas/5
     [HttpPut("{id}")]
     public async Task<IActionResult> PutPersona(int id, PersonaDto personaDto)

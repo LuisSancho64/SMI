@@ -65,16 +65,19 @@ public class CiudadService : ICiudadService
         }
     }
 
+    // En SMI.Server/Services/CiudadService.cs
     public async Task<List<CiudadDto>> ObtenerCiudadesPorPersona(int idPersona)
     {
         return await _context.PersonasLugaresResidencia
             .Where(plr => plr.id_Persona == idPersona)
             .Include(plr => plr.Ciudad)
+            .ThenInclude(c => c.Provincia)
             .Select(plr => new CiudadDto
             {
                 Id = plr.Ciudad.id,
+                Nombre = plr.Ciudad.nombre,
                 IdProvincia = (int)plr.Ciudad.id_Provincia,
-                Nombre = plr.Ciudad.nombre
+                NombreProvincia = plr.Ciudad.Provincia.nombre // Mapeo añadido
             })
             .ToListAsync();
     }

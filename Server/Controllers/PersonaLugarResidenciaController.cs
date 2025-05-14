@@ -21,28 +21,23 @@ namespace SMI.Server.Controllers
             _context = context;
         }
 
-        [HttpGet("persona/{personaId}")] // Cambiado a minúscula para consistencia
-        public async Task<ActionResult<IEnumerable<PersonaLugarResidenciaDto>>> GetByPersonaId(int personaId)
+        [HttpGet("persona/{personaId}")]
+        public async Task<ActionResult<List<CiudadDto>>> GetByPersonaId(int personaId)
         {
-            var lugares = await _context.PersonasLugaresResidencia
+            var ciudades = await _context.PersonasLugaresResidencia
+                .Where(plr => plr.id_Persona == personaId)
                 .Include(plr => plr.Ciudad)
                 .ThenInclude(c => c.Provincia)
-                .Where(plr => plr.id_Persona == personaId)
-                .Select(plr => new PersonaLugarResidenciaDto
+                .Select(plr => new CiudadDto
                 {
-                    IdPersona = plr.id_Persona,
-                    IdCiudad = (int)plr.id_Ciudad,
-                    NombreCiudad = plr.Ciudad.nombre,
+                    Id = plr.Ciudad.id,
+                    Nombre = plr.Ciudad.nombre,
+                    IdProvincia = (int)plr.Ciudad.id_Provincia,
                     NombreProvincia = plr.Ciudad.Provincia.nombre
                 })
                 .ToListAsync();
 
-            if (!lugares.Any())
-            {
-                return NotFound();
-            }
-
-            return lugares;
+            return Ok(ciudades);
         }
 
         [HttpPost("persona/{personaId}")]

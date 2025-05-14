@@ -11,5 +11,6 @@ namespace SMI.Shared.DTOs
         public int Id { get; set; }
         public int IdProvincia { get; set; }
         public string Nombre { get; set; }
+        public string NombreProvincia { get; set; }
     }
 }
