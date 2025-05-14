@@ -1,0 +1,62 @@
+﻿/* Estilo principal del contenedor de pestañas */
+.tab-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: sans-serif;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.tab-header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.2s ease;
+    border-radius: 8px 8px 0 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+    .tab-button:last-child {
+        border-right: none;
+    }
+
+    .tab-button:hover {
+        background-color: #eaeaea;
+    }
+
+    .tab-button.active {
+        background-color: #0078d4;
+        color: white;
+        border-bottom: 3px solid #0078d4;
+    }
+
+.tab-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+@media (max-width: 768px) {
+    .tab-button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .tab-header {
+        flex-direction: column;
+    }
+}

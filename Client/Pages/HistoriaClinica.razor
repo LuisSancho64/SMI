@@ -1,0 +1,30 @@
+﻿@page "/historia-clinica"
+@using Client.Components
+@using Microsoft.AspNetCore.Components
+
+<h3>Historia Clínica</h3>
+
+<TabContainer Tabs="Tabs" />
+
+@code {
+    private List<TabContainer.TabItem> Tabs = new()
+    {
+        new() { Title = "Generales", Route = "/historia-clinica/generales" },
+        new() { Title = "Obstétrico", Route = "/historia-clinica/obstetrico" },
+        new() { Title = "Ginecológico", Route = "/historia-clinica/ginecologico" },
+        new() { Title = "Nutrición", Route = "/historia-clinica/nutricion" },
+        new() { Title = "Psicológico", Route = "/historia-clinica/psicologico" }
+    };
+
+    protected override void OnInitialized()
+    {
+        // Si estamos en HistoriaClínica, seleccionamos la pestaña "Generales" por defecto
+        var currentUri = NavigationManager.Uri;
+        if (currentUri.Contains("generales"))
+        {
+            Tabs[0] = new TabContainer.TabItem { Title = "Generales", Route = "/historia-clinica/generales", IsActive = true };
+        }
+    }
+
+    [Inject] private NavigationManager NavigationManager { get; set; }
+}

@@ -1,0 +1,26 @@
+﻿@page "/historia-clinica/ginecologico"
+@using Client.Components
+
+<TabContainer Tabs="Tabs" />
+
+<h3>Ginecologico</h3>
+
+<!-- Aquí va el contenido de la página de Generales -->
+<form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" />
+    </div>
+    <!-- Otros campos aquí -->
+</form>
+
+@code {
+    private List<TabContainer.TabItem> Tabs = new()
+    {
+        new() { Title = "Generales", Route = "/historia-clinica/generales" },
+        new() { Title = "Obstétrico", Route = "/historia-clinica/obstetrico" },
+        new() { Title = "Ginecológico", Route = "/historia-clinica/ginecologico", IsActive = true },
+        new() { Title = "Nutrición", Route = "/historia-clinica/nutricion" },
+        new() { Title = "Psicológico", Route = "/historia-clinica/psicologico" }
+    };
+}

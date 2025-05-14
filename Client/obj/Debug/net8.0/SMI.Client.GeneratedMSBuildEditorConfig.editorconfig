@@ -26,6 +26,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/4ndre/source/repos/SMI/Client/Components/TabContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/4ndre/source/repos/SMI/Client/Components/Tarjeta.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXJqZXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +40,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/4ndre/source/repos/SMI/Client/Pages/DatosPersonales.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0b3NQZXJzb25hbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HClinica/Generales.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSENsaW5pY2FcR2VuZXJhbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HClinica/Ginecologico.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSENsaW5pY2FcR2luZWNvbG9naWNvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HClinica/Nutricion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSENsaW5pY2FcTnV0cmljaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HClinica/Obstetrico.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSENsaW5pY2FcT2JzdGV0cmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HClinica/Psicologico.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSENsaW5pY2FcUHNpY29sb2dpY28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4ndre/source/repos/SMI/Client/Pages/HistoriaClinica.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWFDbGluaWNhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/4ndre/source/repos/SMI/Client/Pages/Home.razor]

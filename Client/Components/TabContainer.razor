@@ -1,0 +1,54 @@
+﻿@using Microsoft.AspNetCore.Components
+
+<div class="tab-container">
+    <div class="tab-header">
+        @foreach (var tab in Tabs)
+        {
+            <button class="tab-button @(tab.IsActive ? "active" : "")" @onclick="@(() => NavigateToTab(tab.Route))">
+                @tab.Title
+            </button>
+        }
+    </div>
+
+    <div class="tab-content">
+        @if (Tabs.Count > 0)
+        {
+            <div>
+                @TabContent
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<TabItem> Tabs { get; set; }
+
+    [Inject] private NavigationManager Navigation { get; set; }
+
+    private RenderFragment TabContent { get; set; }
+
+    private void NavigateToTab(string route)
+    {
+        // Navegar al tab correspondiente
+        Navigation.NavigateTo(route);
+        // Desmarcar todas las pestañas
+        foreach (var tab in Tabs)
+        {
+            tab.IsActive = false;
+        }
+        // Marcar la pestaña activa
+        var activeTab = Tabs.FirstOrDefault(t => t.Route == route);
+        if (activeTab != null)
+        {
+            activeTab.IsActive = true;
+        }
+    }
+
+    public class TabItem
+    {
+        public string Title { get; set; }
+        public string Route { get; set; }
+        public bool IsActive { get; set; } = false;
+    }
+}

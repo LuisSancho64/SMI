@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Abi3Bmixss5JAA4lUKdQ100Z2VlilhgWkNdiy3QeSdU=",
+  "Hash": "hUMUsRjsDRTOTK9sz9MiFlw7EwXukVZmp0ytsQfcDGE=",
   "Source": "SMI.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -147,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.15.ggd1fyv7lv.js",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.16.po8e19zhwm.js",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.15.ggd1fyv7lv.js",
+      "RelativePath": "_framework/dotnet.native.8.0.16.po8e19zhwm.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,7 +166,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.15.pdm8tx6jky.js",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.16.fvyn8u2sbm.js",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.15.pdm8tx6jky.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.16.fvyn8u2sbm.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,7 +204,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -223,7 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -242,7 +242,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -261,7 +261,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -280,7 +280,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -5090,6 +5090,25 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.WebSockets.wasm"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\4hn2kluasy.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\4mn6rakt7s.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -5717,6 +5736,25 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.wasm"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9vce65b0zl.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9yd6rtg5he.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -5867,25 +5905,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\bcbf39ee8b.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\bddlxbb7uu.gz",
@@ -6344,25 +6363,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\esmwggrdpn.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\f4vo9yevws.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -6515,6 +6515,25 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\fvyn8u2sbm.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.16.fvyn8u2sbm.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.16.fvyn8u2sbm.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.16.fvyn8u2sbm.js"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\galm87paov.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -6532,6 +6551,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Identity.Client.Extensions.Msal.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\geeceyc6nb.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\gehrzchawt.gz",
@@ -6572,23 +6610,42 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Extensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ggd1fyv7lv.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\gj5e9v8f31.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.15.ggd1fyv7lv.js.gz",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.15.ggd1fyv7lv.js",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.15.ggd1fyv7lv.js"
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\glms97wxxd.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\gptdd6zf9f.gz",
@@ -7218,25 +7275,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.Tasks.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ksg76h7fbc.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\kvkwu0ieqp.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -7349,6 +7387,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Serialization.Xml.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\l9ljnusax6.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\lawdj3g4pu.gz",
@@ -7503,25 +7560,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\m2g3wg6z81.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\m2rfukhumw.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -7655,25 +7693,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Queryable.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\n4oaxb8uym.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\n4u0ynh97x.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -7748,25 +7767,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Abstractions.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\nfmhcypp0v.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\o4aa461j9h.gz",
@@ -7845,25 +7845,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.HttpListener.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\pdm8tx6jky.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.15.pdm8tx6jky.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.15.pdm8tx6jky.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.15.pdm8tx6jky.js"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\pj8ty3khy8.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -7902,6 +7883,25 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\po8e19zhwm.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.16.po8e19zhwm.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.16.po8e19zhwm.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.16.po8e19zhwm.js"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\prj0s7y6db.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -7938,6 +7938,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Globalization.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ps6xpt66ke.gz",
+      "SourceId": "SMI.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\pzqcxpkxmy.gz",
@@ -8776,25 +8795,6 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.MemoryMappedFiles.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\xgn9mbe6c4.gz",
-      "SourceId": "SMI.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\xlr9nrta2s.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
@@ -9137,25 +9137,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "SMI.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "SMI.Client",
       "SourceType": "Discovered",
@@ -9270,6 +9251,25 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "SMI.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "SMI.Client",
       "SourceType": "Discovered",
@@ -9306,6 +9306,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\tabcontainer.css",
+      "SourceId": "SMI.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/tabcontainer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tabcontainer.css"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\favicon.ico",
