@@ -2402,9 +2402,8 @@ C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\pzjsl2m35f-lf
 C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\e5qni1uxjz-oyz0vx2fzb.gz
 C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\staticwebassets\msbuild.SMI.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-e9mkk5swfj.gz
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-m8b4ytx3iq.gz
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-haxnx6om73.gz
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-6czd3cudqo.gz
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-so6vj0g3pi.gz
-C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\8cb6dkhgsn-ew6sdaz3h5.gz
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\urh2okopiy-emahqp059k.gz
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\9qcxuewxje-2123fzbo5c.gz
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\6snww9l0yl-7u7z6w40fs.gz
+C:\Users\4ndre\source\repos\SMI\Client\obj\Debug\net8.0\compressed\ds46s9g3iy-59q3pvl2aa.gz

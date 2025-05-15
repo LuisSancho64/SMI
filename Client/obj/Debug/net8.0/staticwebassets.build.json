@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wq9S2qyjGjVoP/23llJfL4XwDjc1L7h69YuFdui/TPI=",
+  "Hash": "L9WmPmV7SnKr9Z5Vl0yqfbf5OBEsj2vxTa1+kzveGFs=",
   "Source": "SMI.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "so6vj0g3pi",
-      "Integrity": "ZBmG/DkN7AXwKQj/+6GvfO/WsrHewZrMtBy59xj0DNo=",
+      "Fingerprint": "59q3pvl2aa",
+      "Integrity": "qQyIfZ8InHV3z9ou0OQoFmHMv+9/aXGugyxlGcgvgbE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "6czd3cudqo",
-      "Integrity": "JqftjSRVfwkJQOPLFsdoSeHm5rDayV4BCTwe5rOF+2M=",
+      "Fingerprint": "7u7z6w40fs",
+      "Integrity": "kWdtnjoCEbGqv/GUSlCyMq7eyWkgFxRIi8hG2g5/D9s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\SMI.Client.pdb"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "haxnx6om73",
-      "Integrity": "SaG0bQ94dCYn3YkN+8e5pcqhFjgadepxDgFot8mYz7k=",
+      "Fingerprint": "2123fzbo5c",
+      "Integrity": "+keIq5VDuo6o4dqNzCy0YhTViPkuKe5j6BXVS8hzXIo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\webcil\\SMI.Client.wasm"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "m8b4ytx3iq",
-      "Integrity": "5tdE0RErXNh18JLMIE7wcTretMWJdvvYAfgn13yjHgc=",
+      "Fingerprint": "emahqp059k",
+      "Integrity": "Bu4wcNvNNtkotsuQNSni/zWW4QobRQtkk/yvTGqiUW8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Shared\\bin\\Debug\\net8.0\\SMI.Shared.pdb"
@@ -1438,8 +1438,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "e9mkk5swfj",
-      "Integrity": "sjUNQ84V7f4vGHjUbeKZX0YBgYWexQngIgJjAnZEVFg=",
+      "Fingerprint": "ew6sdaz3h5",
+      "Integrity": "7pYaaBKgBQ5hGc2qbYUH05MlcZGn4GxAW/DvPAJXZZQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\webcil\\SMI.Shared.wasm"
@@ -5918,7 +5918,7 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.Claims.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-6czd3cudqo.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-7u7z6w40fs.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5932,8 +5932,8 @@
       "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kkd402romn",
-      "Integrity": "TOpY4nRr/5vUTuS1zqzXVwonaXZSuOZI9iVtibk3/Ao=",
+      "Fingerprint": "asw48nm4y8",
+      "Integrity": "Bl2UtiwIAFLoTraMNQ19WQ6E23N+WrQKuzkhqmjbkxc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.pdb"
@@ -6254,7 +6254,7 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Text.Json.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-e9mkk5swfj.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-ew6sdaz3h5.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6268,8 +6268,8 @@
       "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "453j62yl2c",
-      "Integrity": "qAS6b8TX3Pd8LqWoUwhdyzPz63sZdoWISVC1suy3GDg=",
+      "Fingerprint": "2wx22novm1",
+      "Integrity": "7qnoEOFtvJ/HkB2eClm/GS4q0LKM1+VZ2z/p2Zr81KE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.wasm"
@@ -6527,7 +6527,7 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Parallel.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-haxnx6om73.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-2123fzbo5c.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6541,8 +6541,8 @@
       "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "i7fltx9grq",
-      "Integrity": "PjHUbaP22q1qc8kO0yfultv/MCBaqXPdUBB98RV5Ly0=",
+      "Fingerprint": "yfgqwwxfsg",
+      "Integrity": "vkW+5hzCEp0CjSgQBTT8/IEPlNIcTmj1tpvIzeu8XgI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Client.wasm"
@@ -6863,7 +6863,7 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-so6vj0g3pi.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-59q3pvl2aa.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6877,8 +6877,8 @@
       "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6z0beefrwg",
-      "Integrity": "TrCZZ5P2XhD4R34t/d0ram/WudJTVvlBBZhEHX3QRGk=",
+      "Fingerprint": "i6u4fgxqx6",
+      "Integrity": "Nk9FP+WX14Kpt6EdtLt3a7K+wZmTit4WPemiv3tSWCc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9299,7 +9299,7 @@
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.ThreadPool.wasm"
     },
     {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-m8b4ytx3iq.gz",
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-emahqp059k.gz",
       "SourceId": "SMI.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -9313,8 +9313,8 @@
       "RelatedAsset": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "f057157mcm",
-      "Integrity": "4SXVVtbTlUyzW3/IZLGkk+v++Xm+Yk7XwXq4CTuNE0A=",
+      "Fingerprint": "gvwfp9of9j",
+      "Integrity": "1O6/mSKoMtPA6W5IfRI0W0FvFJTX5TdJYSLavWm3mjk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SMI.Shared.pdb"
@@ -10139,6 +10139,27 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "SMI.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "48tmkg660f",
+      "Integrity": "jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "SMI.Client",
       "SourceType": "Discovered",
@@ -10263,27 +10284,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "SMI.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "48tmkg660f",
-      "Integrity": "jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
@@ -10953,11 +10953,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZBmG/DkN7AXwKQj/+6GvfO/WsrHewZrMtBy59xj0DNo=\""
+          "Value": "\"qQyIfZ8InHV3z9ou0OQoFmHMv+9/aXGugyxlGcgvgbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Thu, 15 May 2025 02:55:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10967,18 +10967,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZBmG/DkN7AXwKQj/+6GvfO/WsrHewZrMtBy59xj0DNo="
+          "Value": "sha256-qQyIfZ8InHV3z9ou0OQoFmHMv+9/aXGugyxlGcgvgbE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-so6vj0g3pi.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-59q3pvl2aa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000097427903"
+          "Quality": "0.000099166997"
         }
       ],
       "ResponseHeaders": [
@@ -10988,11 +10988,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10263"
+          "Value": "10083"
         },
         {
           "Name": "ETag",
-          "Value": "\"TrCZZ5P2XhD4R34t/d0ram/WudJTVvlBBZhEHX3QRGk=\""
+          "Value": "\"Nk9FP+WX14Kpt6EdtLt3a7K+wZmTit4WPemiv3tSWCc=\""
         },
         {
           "Name": "Last-Modified",
@@ -11016,19 +11016,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ZBmG/DkN7AXwKQj/+6GvfO/WsrHewZrMtBy59xj0DNo=\""
+          "Value": "W/\"qQyIfZ8InHV3z9ou0OQoFmHMv+9/aXGugyxlGcgvgbE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZBmG/DkN7AXwKQj/+6GvfO/WsrHewZrMtBy59xj0DNo="
+          "Value": "sha256-qQyIfZ8InHV3z9ou0OQoFmHMv+9/aXGugyxlGcgvgbE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-so6vj0g3pi.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\ds46s9g3iy-59q3pvl2aa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11037,7 +11037,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10263"
+          "Value": "10083"
         },
         {
           "Name": "Content-Type",
@@ -11045,7 +11045,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TrCZZ5P2XhD4R34t/d0ram/WudJTVvlBBZhEHX3QRGk=\""
+          "Value": "\"Nk9FP+WX14Kpt6EdtLt3a7K+wZmTit4WPemiv3tSWCc=\""
         },
         {
           "Name": "Last-Modified",
@@ -11067,7 +11067,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TrCZZ5P2XhD4R34t/d0ram/WudJTVvlBBZhEHX3QRGk="
+          "Value": "sha256-Nk9FP+WX14Kpt6EdtLt3a7K+wZmTit4WPemiv3tSWCc="
         }
       ]
     },
@@ -11133,7 +11133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Wed, 01 Nov 2023 01:05:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11186,7 +11186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Wed, 01 Nov 2023 01:05:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11270,7 +11270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11323,7 +11323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11407,7 +11407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11460,7 +11460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11544,7 +11544,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11597,7 +11597,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11681,7 +11681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11734,7 +11734,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11818,7 +11818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11871,7 +11871,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11955,7 +11955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12008,7 +12008,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:34:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12092,7 +12092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:33:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12145,7 +12145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Tue, 15 Apr 2025 22:33:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12229,7 +12229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12282,7 +12282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12366,7 +12366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12419,7 +12419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12503,7 +12503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12556,7 +12556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Mon, 23 Oct 2023 19:14:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14558,7 +14558,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Thu, 15 May 2025 02:51:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14611,7 +14611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Thu, 15 May 2025 02:51:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19310,7 +19310,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JqftjSRVfwkJQOPLFsdoSeHm5rDayV4BCTwe5rOF+2M=\""
+          "Value": "\"kWdtnjoCEbGqv/GUSlCyMq7eyWkgFxRIi8hG2g5/D9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 02:55:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kWdtnjoCEbGqv/GUSlCyMq7eyWkgFxRIi8hG2g5/D9s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/SMI.Client.pdb",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-7u7z6w40fs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015523370"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64418"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bl2UtiwIAFLoTraMNQ19WQ6E23N+WrQKuzkhqmjbkxc=\""
         },
         {
           "Name": "Last-Modified",
@@ -19319,45 +19358,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JqftjSRVfwkJQOPLFsdoSeHm5rDayV4BCTwe5rOF+2M="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/SMI.Client.pdb",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-6czd3cudqo.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015804779"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "63271"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TOpY4nRr/5vUTuS1zqzXVwonaXZSuOZI9iVtibk3/Ao=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -19373,19 +19373,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"JqftjSRVfwkJQOPLFsdoSeHm5rDayV4BCTwe5rOF+2M=\""
+          "Value": "W/\"kWdtnjoCEbGqv/GUSlCyMq7eyWkgFxRIi8hG2g5/D9s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JqftjSRVfwkJQOPLFsdoSeHm5rDayV4BCTwe5rOF+2M="
+          "Value": "sha256-kWdtnjoCEbGqv/GUSlCyMq7eyWkgFxRIi8hG2g5/D9s="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-6czd3cudqo.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\6snww9l0yl-7u7z6w40fs.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19394,7 +19394,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "63271"
+          "Value": "64418"
         },
         {
           "Name": "Content-Type",
@@ -19402,11 +19402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TOpY4nRr/5vUTuS1zqzXVwonaXZSuOZI9iVtibk3/Ao=\""
+          "Value": "\"Bl2UtiwIAFLoTraMNQ19WQ6E23N+WrQKuzkhqmjbkxc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Thu, 15 May 2025 02:51:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19424,7 +19424,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TOpY4nRr/5vUTuS1zqzXVwonaXZSuOZI9iVtibk3/Ao="
+          "Value": "sha256-Bl2UtiwIAFLoTraMNQ19WQ6E23N+WrQKuzkhqmjbkxc="
         }
       ]
     },
@@ -19447,11 +19447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SaG0bQ94dCYn3YkN+8e5pcqhFjgadepxDgFot8mYz7k=\""
+          "Value": "\"+keIq5VDuo6o4dqNzCy0YhTViPkuKe5j6BXVS8hzXIo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Thu, 15 May 2025 02:55:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19461,18 +19461,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SaG0bQ94dCYn3YkN+8e5pcqhFjgadepxDgFot8mYz7k="
+          "Value": "sha256-+keIq5VDuo6o4dqNzCy0YhTViPkuKe5j6BXVS8hzXIo="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-haxnx6om73.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-2123fzbo5c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000020942408"
+          "Quality": "0.000020548227"
         }
       ],
       "ResponseHeaders": [
@@ -19482,11 +19482,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "47749"
+          "Value": "48665"
         },
         {
           "Name": "ETag",
-          "Value": "\"PjHUbaP22q1qc8kO0yfultv/MCBaqXPdUBB98RV5Ly0=\""
+          "Value": "\"vkW+5hzCEp0CjSgQBTT8/IEPlNIcTmj1tpvIzeu8XgI=\""
         },
         {
           "Name": "Last-Modified",
@@ -19510,19 +19510,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SaG0bQ94dCYn3YkN+8e5pcqhFjgadepxDgFot8mYz7k=\""
+          "Value": "W/\"+keIq5VDuo6o4dqNzCy0YhTViPkuKe5j6BXVS8hzXIo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SaG0bQ94dCYn3YkN+8e5pcqhFjgadepxDgFot8mYz7k="
+          "Value": "sha256-+keIq5VDuo6o4dqNzCy0YhTViPkuKe5j6BXVS8hzXIo="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-haxnx6om73.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\9qcxuewxje-2123fzbo5c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19531,7 +19531,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "47749"
+          "Value": "48665"
         },
         {
           "Name": "Content-Type",
@@ -19539,7 +19539,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PjHUbaP22q1qc8kO0yfultv/MCBaqXPdUBB98RV5Ly0=\""
+          "Value": "\"vkW+5hzCEp0CjSgQBTT8/IEPlNIcTmj1tpvIzeu8XgI=\""
         },
         {
           "Name": "Last-Modified",
@@ -19561,7 +19561,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PjHUbaP22q1qc8kO0yfultv/MCBaqXPdUBB98RV5Ly0="
+          "Value": "sha256-vkW+5hzCEp0CjSgQBTT8/IEPlNIcTmj1tpvIzeu8XgI="
         }
       ]
     },
@@ -19584,7 +19584,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tdE0RErXNh18JLMIE7wcTretMWJdvvYAfgn13yjHgc=\""
+          "Value": "\"Bu4wcNvNNtkotsuQNSni/zWW4QobRQtkk/yvTGqiUW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 02:55:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bu4wcNvNNtkotsuQNSni/zWW4QobRQtkk/yvTGqiUW8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/SMI.Shared.pdb",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-emahqp059k.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000071179443"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14048"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1O6/mSKoMtPA6W5IfRI0W0FvFJTX5TdJYSLavWm3mjk=\""
         },
         {
           "Name": "Last-Modified",
@@ -19593,45 +19632,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5tdE0RErXNh18JLMIE7wcTretMWJdvvYAfgn13yjHgc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/SMI.Shared.pdb",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-m8b4ytx3iq.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000073324534"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13637"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4SXVVtbTlUyzW3/IZLGkk+v++Xm+Yk7XwXq4CTuNE0A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -19647,19 +19647,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5tdE0RErXNh18JLMIE7wcTretMWJdvvYAfgn13yjHgc=\""
+          "Value": "W/\"Bu4wcNvNNtkotsuQNSni/zWW4QobRQtkk/yvTGqiUW8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tdE0RErXNh18JLMIE7wcTretMWJdvvYAfgn13yjHgc="
+          "Value": "sha256-Bu4wcNvNNtkotsuQNSni/zWW4QobRQtkk/yvTGqiUW8="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.pdb.gz",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-m8b4ytx3iq.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\urh2okopiy-emahqp059k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19668,7 +19668,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13637"
+          "Value": "14048"
         },
         {
           "Name": "Content-Type",
@@ -19676,11 +19676,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4SXVVtbTlUyzW3/IZLGkk+v++Xm+Yk7XwXq4CTuNE0A=\""
+          "Value": "\"1O6/mSKoMtPA6W5IfRI0W0FvFJTX5TdJYSLavWm3mjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Thu, 15 May 2025 02:51:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19698,7 +19698,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4SXVVtbTlUyzW3/IZLGkk+v++Xm+Yk7XwXq4CTuNE0A="
+          "Value": "sha256-1O6/mSKoMtPA6W5IfRI0W0FvFJTX5TdJYSLavWm3mjk="
         }
       ]
     },
@@ -19721,11 +19721,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sjUNQ84V7f4vGHjUbeKZX0YBgYWexQngIgJjAnZEVFg=\""
+          "Value": "\"7pYaaBKgBQ5hGc2qbYUH05MlcZGn4GxAW/DvPAJXZZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:08 GMT"
+          "Value": "Thu, 15 May 2025 02:55:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19735,18 +19735,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sjUNQ84V7f4vGHjUbeKZX0YBgYWexQngIgJjAnZEVFg="
+          "Value": "sha256-7pYaaBKgBQ5hGc2qbYUH05MlcZGn4GxAW/DvPAJXZZQ="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.wasm",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-e9mkk5swfj.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-ew6sdaz3h5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077083173"
+          "Quality": "0.000074688177"
         }
       ],
       "ResponseHeaders": [
@@ -19756,11 +19756,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12972"
+          "Value": "13388"
         },
         {
           "Name": "ETag",
-          "Value": "\"qAS6b8TX3Pd8LqWoUwhdyzPz63sZdoWISVC1suy3GDg=\""
+          "Value": "\"7qnoEOFtvJ/HkB2eClm/GS4q0LKM1+VZ2z/p2Zr81KE=\""
         },
         {
           "Name": "Last-Modified",
@@ -19784,19 +19784,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sjUNQ84V7f4vGHjUbeKZX0YBgYWexQngIgJjAnZEVFg=\""
+          "Value": "W/\"7pYaaBKgBQ5hGc2qbYUH05MlcZGn4GxAW/DvPAJXZZQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sjUNQ84V7f4vGHjUbeKZX0YBgYWexQngIgJjAnZEVFg="
+          "Value": "sha256-7pYaaBKgBQ5hGc2qbYUH05MlcZGn4GxAW/DvPAJXZZQ="
         }
       ]
     },
     {
       "Route": "_framework/SMI.Shared.wasm.gz",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-e9mkk5swfj.gz",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\8cb6dkhgsn-ew6sdaz3h5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19805,7 +19805,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12972"
+          "Value": "13388"
         },
         {
           "Name": "Content-Type",
@@ -19813,7 +19813,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qAS6b8TX3Pd8LqWoUwhdyzPz63sZdoWISVC1suy3GDg=\""
+          "Value": "\"7qnoEOFtvJ/HkB2eClm/GS4q0LKM1+VZ2z/p2Zr81KE=\""
         },
         {
           "Name": "Last-Modified",
@@ -19835,7 +19835,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qAS6b8TX3Pd8LqWoUwhdyzPz63sZdoWISVC1suy3GDg="
+          "Value": "sha256-7qnoEOFtvJ/HkB2eClm/GS4q0LKM1+VZ2z/p2Zr81KE="
         }
       ]
     },
@@ -31546,7 +31546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Thu, 15 May 2025 02:51:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31599,7 +31599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:51:09 GMT"
+          "Value": "Thu, 15 May 2025 02:51:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -43513,6 +43513,88 @@
       ]
     },
     {
+      "Route": "css/open-iconic/FONT-LICENSE",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 02:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
+      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 02:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48tmkg660f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/FONT-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
       "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
       "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "Selectors": [],
@@ -44001,88 +44083,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
-        }
-      ]
-    },
-    {
-      "Route": "css/open-iconic/FONT-LICENSE",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4103"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:42:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
-        }
-      ]
-    },
-    {
-      "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
-      "AssetFile": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4103"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 02:42:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48tmkg660f"
-        },
-        {
-          "Name": "label",
-          "Value": "css/open-iconic/FONT-LICENSE"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
         }
       ]
     },
