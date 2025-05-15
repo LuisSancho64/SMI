@@ -577,3 +577,7 @@ C:\Users\4ndre\source\repos\SMI\Server\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\4ndre\source\repos\SMI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\4ndre\source\repos\SMI\Server\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
 C:\Users\4ndre\source\repos\SMI\Server\obj\Debug\net8.0\SMI.Server.sourcelink.json
+C:\Users\4ndre\source\repos\SMI\Server\bin\Debug\net8.0\SMI.Client.staticwebassets.endpoints.json
+C:\Users\4ndre\source\repos\SMI\Server\bin\Debug\net8.0\SMI.Server.staticwebassets.endpoints.json
+C:\Users\4ndre\source\repos\SMI\Server\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\4ndre\source\repos\SMI\Server\obj\Debug\net8.0\staticwebassets\msbuild.SMI.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

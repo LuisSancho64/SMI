@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\compressed\\plbubp27fk.gz",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
-    },
-    {
       "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SMI.Client.styles.css",
       "PackagePath": "staticwebassets\\SMI.Client.styles.css"
     },
@@ -115,6 +111,10 @@
     {
       "Id": "C:\\Users\\4ndre\\source\\repos\\SMI\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SMI.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SMI.Client.Microsoft.AspNetCore.StaticWebAssets.props",
