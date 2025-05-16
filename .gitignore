@@ -25,3 +25,7 @@ Client/wwwroot/_framework/
 # Otros
 *.log
 .idea/
+
+*.dll
+
+*.pdb
