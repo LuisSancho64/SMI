@@ -28,4 +28,5 @@ public partial class Persona
 
     public ICollection<PersonaEstadoCivil> EstadosCiviles { get; set; } = new List<PersonaEstadoCivil>();
 
+    public  virtual PersonaDireccion Direccion { get; set; }
 }

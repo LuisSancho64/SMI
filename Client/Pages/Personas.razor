@@ -138,7 +138,7 @@
 @if (showModal)
 {
     <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
-        <div class="modal-dialog modal-lg"> <!-- Aumenté el tamaño a modal-lg para más espacio -->
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">@((currentUser.Id == 0) ? "Crear Persona" : "Editar Persona")</h5>
@@ -282,6 +282,47 @@
                             }
                         </div>
                     </div>
+
+                    <!-- Sección de Dirección -->
+                    <div class="card mb-3">
+                        <div class="card-header">Dirección</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Calle Principal</label>
+                                        <input class="form-control" @bind="currentUser.Direccion.CallePrincipal" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Calle Secundaria 1</label>
+                                        <input class="form-control" @bind="currentUser.Direccion.CalleSecundaria1" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Calle Secundaria 2</label>
+                                        <input class="form-control" @bind="currentUser.Direccion.CalleSecundaria2" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Número de Casa</label>
+                                        <input class="form-control" @bind="currentUser.Direccion.NumeroCasa" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Referencia</label>
+                                <textarea class="form-control" @bind="currentUser.Direccion.Referencia"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" @onclick="CloseModal">Cancelar</button>
@@ -341,9 +382,9 @@
                         Detalles del Usuario
                     </h5>
                     <button type="button"
-                    class="btn btn-danger btn-sm"
-                    style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;"
-                    @onclick="CerrarModalDetalles">
+                            class="btn btn-danger btn-sm"
+                            style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;"
+                            @onclick="CerrarModalDetalles">
                         <span style="color: white; font-size: 20px;">&times;</span>
                     </button>
                 </div>
@@ -380,8 +421,6 @@
                                             <strong>Fecha Nacimiento:</strong> <span>@usuarioSeleccionado.FechaNacimiento?.ToString("dd/MM/yyyy")</span>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -391,10 +430,68 @@
                                     <i class="fas fa-envelope"></i> Contacto
                                 </div>
                                 <div class="card-body">
-                                    <dl class="row">
-                                        <dt class="col-sm-4">Correo:</dt>
-                                        <dd class="col-sm-8">@usuarioSeleccionado.Correo</dd>
-                                    </dl>
+                                    <div class="row mb-2">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <strong>Correo:</strong> <span>@usuarioSeleccionado.Correo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @* Sección de Dirección en el modal *@
+                            <div class="card mb-3">
+                                <div class="card-header bg-light">
+                                    <i class="fas fa-map-marker-alt"></i> Dirección
+                                </div>
+                                <div class="card-body">
+                                    @if (usuarioSeleccionado.Direccion != null &&
+                                   (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.CallePrincipal) ||
+                                   !string.IsNullOrEmpty(usuarioSeleccionado.Direccion.NumeroCasa)))
+                                    {
+                                        <div class="row">
+                                            @if (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.CallePrincipal))
+                                            {
+                                                <div class="col-md-6 mb-2">
+                                                    <strong>Calle Principal:</strong>
+                                                    <span>@usuarioSeleccionado.Direccion.CallePrincipal</span>
+                                                </div>
+                                            }
+                                            @if (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.CalleSecundaria1))
+                                            {
+                                                <div class="col-md-6 mb-2">
+                                                    <strong>Calle Secundaria 1:</strong>
+                                                    <span>@usuarioSeleccionado.Direccion.CalleSecundaria1</span>
+                                                </div>
+                                            }
+                                            @if (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.CalleSecundaria2))
+                                            {
+                                                <div class="col-md-6 mb-2">
+                                                    <strong>Calle Secundaria 2:</strong>
+                                                    <span>@usuarioSeleccionado.Direccion.CalleSecundaria2</span>
+                                                </div>
+                                            }
+                                            @if (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.NumeroCasa))
+                                            {
+                                                <div class="col-md-6 mb-2">
+                                                    <strong>Número de Casa:</strong>
+                                                    <span>@usuarioSeleccionado.Direccion.NumeroCasa</span>
+                                                </div>
+                                            }
+                                            @if (!string.IsNullOrEmpty(usuarioSeleccionado.Direccion.Referencia))
+                                            {
+                                                <div class="col-12 mb-2">
+                                                    <strong>Referencia:</strong>
+                                                    <span>@usuarioSeleccionado.Direccion.Referencia</span>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="alert alert-info mb-0">
+                                            No hay registrada una dirección
+                                        </div>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -589,8 +686,8 @@
         try
         {
             var ciudades = await CiudadService.ObtenerCiudadesPorPersona(usuario.Id);
+            var direccion = await UserService.ObtenerDireccionPersona(usuario.Id);
 
-            // Reemplaza la sintaxis 'with' por esta:
             usuarioSeleccionado = new PersonaDto
                 {
                     Id = usuario.Id,
@@ -599,7 +696,34 @@
                     FechaNacimiento = usuario.FechaNacimiento,
                     Correo = usuario.Correo,
                     Id_Genero = usuario.Id_Genero,
-					IdEstadoCivil = usuario.IdEstadoCivil,
+                    IdEstadoCivil = usuario.IdEstadoCivil,
+                    Documentos = usuario.Documentos,
+                    CiudadesResidencia = ciudades ?? new List<CiudadDto>(),
+                    Direccion = direccion ?? new PersonaDireccionDto(), // Asegura que nunca sea null
+                    GeneroNombre = usuario.Id_Genero switch
+                    {
+                        1 => "Masculino",
+                        2 => "Femenino",
+                        _ => "No especificado"
+                    },
+                    EstadoCivilNombre = usuario.EstadoCivilNombre
+                };
+        }
+        catch (Exception ex)
+        {
+            var ciudades = await CiudadService.ObtenerCiudadesPorPersona(usuario.Id);
+
+            Console.WriteLine($"Error al cargar detalles: {ex}");
+            usuarioSeleccionado = new PersonaDto
+                {
+                    Id = usuario.Id,
+                    Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
+                    FechaNacimiento = usuario.FechaNacimiento,
+                    Correo = usuario.Correo,
+                    Id_Genero = usuario.Id_Genero,
+                    Direccion = new PersonaDireccionDto(),
+                    IdEstadoCivil = usuario.IdEstadoCivil,
                     Documentos = usuario.Documentos,
                     CiudadesResidencia = ciudades ?? new List<CiudadDto>(),
                     GeneroNombre = usuario.Id_Genero switch
@@ -608,12 +732,8 @@
                         2 => "Femenino",
                         _ => "No especificado"
                     },
-					EstadoCivilNombre = usuario.EstadoCivilNombre
+                    EstadoCivilNombre = usuario.EstadoCivilNombre
                 };
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error al cargar detalles: {ex.ToString()}");
         }
     }
     private void CerrarModalDetalles()
@@ -709,32 +829,27 @@
                     Apellido = usuario.Apellido,
                     Id_Genero = usuario.Id_Genero,
                     Correo = usuario.Correo,
-					IdEstadoCivil = await EstadoCivilService.ObtenerEstadoCivilDePersona(usuario.Id)??0,
+                    IdEstadoCivil = await EstadoCivilService.ObtenerEstadoCivilDePersona(usuario.Id) ?? 0,
                     FechaNacimiento = usuario.FechaNacimiento,
-                    Documentos = usuario.Documentos?.ToList() ?? new List<PersonaDocumentoDto>()
+                    Documentos = usuario.Documentos?.ToList() ?? new List<PersonaDocumentoDto>(),
+                    Direccion = await UserService.ObtenerDireccionPersona(usuario.Id) ?? new PersonaDireccionDto()
                 };
 
             currentDocumento = currentUser.Documentos.FirstOrDefault() ?? new PersonaDocumentoDto();
 
-            // Cargar ciudades de residencia (maneja el caso de 404)
+            // Cargar ciudades de residencia
             CiudadesSeleccionadas = await CiudadService.ObtenerCiudadesPorPersona(currentUser.Id);
 
-            // Si hay ciudades, cargar la provincia correspondiente
             if (CiudadesSeleccionadas.Any())
             {
-                var primeraCiudadId = CiudadesSeleccionadas.First().Id;
-                if (primeraCiudadId > 0)
+                var primeraCiudad = await CiudadService.ObtenerCiudad(CiudadesSeleccionadas.First().Id);
+                if (primeraCiudad != null)
                 {
-                    var primeraCiudad = await CiudadService.ObtenerCiudad(primeraCiudadId);
-
-                    if (primeraCiudad != null)
-                    {
-						_selectedProvinciaId = primeraCiudad.IdProvincia;
-						await LoadCiudadesAsync();
-                    }
+                    _selectedProvinciaId = primeraCiudad.IdProvincia;
+                    await LoadCiudadesAsync();
                 }
             }
-            
+
             showModal = true;
             StateHasChanged();
         }
@@ -789,9 +904,9 @@
             };
             }
 
-            //Eliminar los campos GeneroNombre y EstadoCivilNombre
-			currentUser.GeneroNombre = null;
-			currentUser.EstadoCivilNombre = null;
+            // Eliminar campos calculados
+            currentUser.GeneroNombre = null;
+            currentUser.EstadoCivilNombre = null;
 
             // Guardar persona
             int personaId;
@@ -806,8 +921,20 @@
                 personaId = currentUser.Id;
             }
 
+            // Guardar dirección
+            if (personaId > 0)
+            {
+                currentUser.Direccion.IdPersona = personaId;
+                var direccionResult = await UserService.GuardarDireccionPersona(currentUser.Direccion);
+                if (!direccionResult)
+                {
+                    errorMessage = "Error al guardar dirección";
+                    showError = true;
+                    return;
+                }
+            }
 
-            // Guardar ciudades de residencia solo si hay seleccionadas
+            // Guardar ciudades de residencia
             if (personaId > 0 && CiudadesSeleccionadas.Any(c => c.Id > 0))
             {
                 var ciudadIds = CiudadesSeleccionadas
@@ -824,13 +951,14 @@
                 }
             }
 
-			//Guardar estado civil
+            // Guardar estado civil
             if (currentUser.IdEstadoCivil > 0)
             {
                 await EstadoCivilService.GuardarEstadoCivilPersona(
                     currentUser.Id,
                     currentUser.IdEstadoCivil);
             }
+
             await LoadData();
             CloseModal();
         }

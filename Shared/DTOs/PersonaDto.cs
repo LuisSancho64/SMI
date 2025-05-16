@@ -27,6 +27,10 @@ namespace SMI.Shared.DTOs
 
         public int IdEstadoCivil { get; set; }
         public string? EstadoCivilNombre { get; set; }
+
+        //Direccion
+        public PersonaDireccionDto Direccion { get; set; } = new PersonaDireccionDto();
+
     }
 }
 

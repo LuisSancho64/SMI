@@ -416,6 +416,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PersonasController",
+    "Method": "GetDireccionPersona",
+    "RelativePath": "api/Personas/{id}/direccion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SMI.Shared.DTOs.PersonaDireccionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PersonasController",
+    "Method": "GuardarDireccion",
+    "RelativePath": "api/Personas/direccion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "direccionDto",
+        "Type": "SMI.Shared.DTOs.PersonaDireccionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SMI.Server.Controllers.TestAuthController",
     "Method": "GetProtegido",
     "RelativePath": "api/TestAuth/protegido",

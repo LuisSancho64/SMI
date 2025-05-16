@@ -4,6 +4,7 @@ using SMI.Shared.DTOs;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Net;
 
 namespace SMI.Client.Services
 {
@@ -131,6 +132,48 @@ namespace SMI.Client.Services
             {
                 Console.WriteLine($"Error al obtener los tipos de documento: {ex.Message}");
                 return new List<TipoDocumentoDto>();
+            }
+        }
+
+        //------------------ Direcciones ------------------
+        public async Task<PersonaDireccionDto> ObtenerDireccionPersona(int personaId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/Personas/{personaId}/direccion");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<PersonaDireccionDto>();
+                }
+                else if (response.StatusCode == HttpStatusCode.NotFound)
+                {
+                    return new PersonaDireccionDto(); // Retorna un DTO vacío
+                }
+                else
+                {
+                    response.EnsureSuccessStatusCode(); // Lanza excepción para otros códigos de error
+                    return null;
+                }
+            }
+            catch
+            {
+                return new PersonaDireccionDto(); // Retorna un DTO vacío en caso de error
+            }
+        }
+
+        public async Task<bool> GuardarDireccionPersona(PersonaDireccionDto direccion)
+        {
+            try
+            {
+                if (direccion.IdPersona == 0) return false;
+
+                var response = await _httpClient.PostAsJsonAsync("api/Personas/direccion", direccion);
+                return response.IsSuccessStatusCode;
+            }
+            catch
+            {
+                return false;
             }
         }
     }

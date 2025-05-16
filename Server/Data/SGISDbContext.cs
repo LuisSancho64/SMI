@@ -18,6 +18,7 @@ namespace SMI.Server.Data
         public DbSet<EstadoCivil> EstadosCiviles { get; set; }
         public DbSet<PersonaEstadoCivil> PersonasEstadosCiviles { get; set; }
 
+        public DbSet<PersonaDireccion> PersonaDirecciones { get; set; } // Agregado para la dirección de la persona
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -165,6 +166,16 @@ namespace SMI.Server.Data
                 .WithMany()
                 .HasForeignKey(pec => pec.id_EstadoCivil);
 
+
+           modelBuilder.Entity<PersonaDireccion>(entity =>
+            {
+                entity.ToTable("PersonaDireccion");
+                entity.HasKey(pd => pd.id_Persona);
+                entity.HasOne(d => d.Persona)
+                      .WithOne(p => p.Direccion)
+                      .HasForeignKey<PersonaDireccion>(d => d.id_Persona)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
 
             OnModelCreatingPartial(modelBuilder);
         }

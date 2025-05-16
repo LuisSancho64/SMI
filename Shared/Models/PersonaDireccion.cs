@@ -17,5 +17,5 @@ public partial class PersonaDireccion
 
     public string? referencia { get; set; }
 
-    public virtual Persona id_PersonaNavigation { get; set; } = null!;
+    public virtual Persona Persona { get; set; }
 }

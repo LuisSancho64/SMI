@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SMI.Server.Data;
+using SMI.Server.Services;
 using SMI.Shared.DTOs;
 using SMI.Shared.Models;
 
@@ -8,10 +9,12 @@ using SMI.Shared.Models;
 [ApiController]
 public class PersonasController : ControllerBase
 {
+    private readonly PersonaService _personaService;
     private readonly SGISDbContext _context;
 
-    public PersonasController(SGISDbContext context)
+    public PersonasController(PersonaService personaService, SGISDbContext context)
     {
+        _personaService = personaService;
         _context = context;
     }
 
@@ -24,6 +27,7 @@ public class PersonasController : ControllerBase
                 .ThenInclude(pd => pd.TipoDocumento)
             .Include(p => p.EstadosCiviles)
                 .ThenInclude(pe => pe.EstadoCivil)
+            .Include(p => p.Direccion) // Incluir dirección
             .ToListAsync();
 
         var personasDto = personas.Select(p => new PersonaDto
@@ -39,8 +43,17 @@ public class PersonasController : ControllerBase
             {
                 TipoDocumentoId = pd.id_TipoDocumento,
                 NumeroDocumento = pd.numeroDocumento,
-                TipoDocumentoNombre = pd.TipoDocumento?.nombre  // Aquí se asigna correctamente el nombre del tipo de documento
-            }).ToList()
+                TipoDocumentoNombre = pd.TipoDocumento?.nombre
+            }).ToList(),
+            Direccion = p.Direccion != null ? new PersonaDireccionDto
+            {
+                IdPersona = p.Direccion.id_Persona,
+                CallePrincipal = p.Direccion.callePrincipal,
+                CalleSecundaria1 = p.Direccion.calleSecundaria1,
+                CalleSecundaria2 = p.Direccion.calleSecundaria2,
+                NumeroCasa = p.Direccion.numeroCasa,
+                Referencia = p.Direccion.referencia
+            } : null
         }).ToList();
 
         return Ok(personasDto);
@@ -53,10 +66,10 @@ public class PersonasController : ControllerBase
         var persona = await _context.Personas
             .Include(p => p.Documentos)
                 .ThenInclude(pd => pd.TipoDocumento)
-                .Include(p => p.EstadosCiviles)
+            .Include(p => p.EstadosCiviles)
                 .ThenInclude(pe => pe.EstadoCivil)
+            .Include(p => p.Direccion) // Incluir dirección
             .FirstOrDefaultAsync(p => p.id == id);
-
 
         if (persona == null)
             return NotFound();
@@ -74,12 +87,22 @@ public class PersonasController : ControllerBase
             {
                 TipoDocumentoId = pd.id_TipoDocumento,
                 NumeroDocumento = pd.numeroDocumento,
-                TipoDocumentoNombre = pd.TipoDocumento?.nombre  // Asignación de nombre correctamente
-            }).ToList()
+                TipoDocumentoNombre = pd.TipoDocumento?.nombre
+            }).ToList(),
+            Direccion = persona.Direccion != null ? new PersonaDireccionDto
+            {
+                IdPersona = persona.Direccion.id_Persona,
+                CallePrincipal = persona.Direccion.callePrincipal,
+                CalleSecundaria1 = persona.Direccion.calleSecundaria1,
+                CalleSecundaria2 = persona.Direccion.calleSecundaria2,
+                NumeroCasa = persona.Direccion.numeroCasa,
+                Referencia = persona.Direccion.referencia
+            } : null
         };
 
         return personaDto;
     }
+
     // PUT: api/Personas/5
     [HttpPut("{id}")]
     public async Task<IActionResult> PutPersona(int id, PersonaDto personaDto)
@@ -87,99 +110,29 @@ public class PersonasController : ControllerBase
         if (id != personaDto.Id)
             return BadRequest();
 
-        var persona = await _context.Personas
-            .Include(p => p.Documentos)
-            .FirstOrDefaultAsync(p => p.id == id);
-
-        if (persona == null)
-            return NotFound();
-
-        persona.nombre = personaDto.Nombre;
-        persona.apellido = personaDto.Apellido;
-        persona.id_Genero = personaDto.Id_Genero;
-        persona.FechaNacimiento = personaDto.FechaNacimiento;
-        persona.Correo = personaDto.Correo;
-
-        using var transaction = await _context.Database.BeginTransactionAsync();
-
         try
         {
-            _context.Entry(persona).State = EntityState.Modified;
-
-            // Eliminar documentos actuales
-            _context.PersonaDocumentos.RemoveRange(persona.Documentos);
-
-            // Agregar los nuevos
-            if (personaDto.Documentos != null)
-            {
-                foreach (var docDto in personaDto.Documentos)
-                {
-                    _context.PersonaDocumentos.Add(new PersonaDocumento
-                    {
-                        id_Persona = id,
-                        id_TipoDocumento = docDto.TipoDocumentoId,
-                        numeroDocumento = docDto.NumeroDocumento
-                    });
-                }
-            }
-
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
+            var personaActualizada = await _personaService.ActualizarPersonaConDireccion(personaDto);
+            return Ok(personaActualizada);
         }
-        catch
+        catch (Exception ex)
         {
-            await transaction.RollbackAsync();
-            throw;
+            return StatusCode(500, $"Error al actualizar persona: {ex.Message}");
         }
-
-        return NoContent();
     }
-
 
     // POST: api/Personas
     [HttpPost]
     public async Task<ActionResult<PersonaDto>> PostPersona(PersonaDto personaDto)
     {
-        var persona = new Persona
-        {
-            nombre = personaDto.Nombre,
-            apellido = personaDto.Apellido,
-            id_Genero = personaDto.Id_Genero,
-            FechaNacimiento = personaDto.FechaNacimiento,
-            Correo = personaDto.Correo
-        };
-
-        using var transaction = await _context.Database.BeginTransactionAsync();
-
         try
         {
-            _context.Personas.Add(persona);
-            await _context.SaveChangesAsync();
-
-            if (personaDto.Documentos != null)
-            {
-                foreach (var docDto in personaDto.Documentos)
-                {
-                    _context.PersonaDocumentos.Add(new PersonaDocumento
-                    {
-                        id_Persona = persona.id,
-                        id_TipoDocumento = docDto.TipoDocumentoId,
-                        numeroDocumento = docDto.NumeroDocumento
-                    });
-                }
-
-                await _context.SaveChangesAsync();
-            }
-
-            await transaction.CommitAsync();
-            personaDto.Id = persona.id;
-
-            return CreatedAtAction("GetPersona", new { id = persona.id }, personaDto);
+            var personaCreada = await _personaService.CrearPersonaConDireccion(personaDto);
+            return CreatedAtAction("GetPersona", new { id = personaCreada.Id }, personaCreada);
         }
-        catch
+        catch (Exception ex)
         {
-            await transaction.RollbackAsync();
-            throw;
+            return StatusCode(500, $"Error al crear persona: {ex.Message}");
         }
     }
 
@@ -191,12 +144,21 @@ public class PersonasController : ControllerBase
 
         try
         {
+            // Eliminar documentos
             var documentos = await _context.PersonaDocumentos
                 .Where(pd => pd.id_Persona == id)
                 .ToListAsync();
-
             _context.PersonaDocumentos.RemoveRange(documentos);
 
+            // Eliminar dirección
+            var direccion = await _context.PersonaDirecciones
+                .FirstOrDefaultAsync(d => d.id_Persona == id);
+            if (direccion != null)
+            {
+                _context.PersonaDirecciones.Remove(direccion);
+            }
+
+            // Eliminar persona
             var persona = await _context.Personas.FindAsync(id);
             if (persona == null)
                 return NotFound();
@@ -207,11 +169,71 @@ public class PersonasController : ControllerBase
 
             return NoContent();
         }
-        catch
+        catch (Exception ex)
         {
             await transaction.RollbackAsync();
-            throw;
+            return StatusCode(500, $"Error al eliminar persona: {ex.Message}");
         }
+    }
+
+    [HttpGet("{id}/direccion")]
+    public async Task<ActionResult<PersonaDireccionDto>> GetDireccionPersona(int id)
+    {
+        var direccion = await _context.PersonaDirecciones
+            .FirstOrDefaultAsync(d => d.id_Persona == id);
+
+        if (direccion == null)
+        {
+            return Ok(new PersonaDireccionDto()); // Retorna DTO vacío en lugar de 404
+        }
+
+        return new PersonaDireccionDto
+        {
+            IdPersona = direccion.id_Persona,
+            CallePrincipal = direccion.callePrincipal,
+            CalleSecundaria1 = direccion.calleSecundaria1,
+            CalleSecundaria2 = direccion.calleSecundaria2,
+            NumeroCasa = direccion.numeroCasa,
+            Referencia = direccion.referencia
+        };
+    }
+
+    [HttpPost("direccion")]
+    public async Task<IActionResult> GuardarDireccion([FromBody] PersonaDireccionDto direccionDto)
+    {
+        if (direccionDto.IdPersona == 0)
+            return BadRequest("Id de persona inválido");
+
+        var direccion = await _context.PersonaDirecciones
+            .FirstOrDefaultAsync(d => d.id_Persona == direccionDto.IdPersona);
+
+        if (direccion == null)
+        {
+            // Crear nueva dirección
+            direccion = new PersonaDireccion
+            {
+                id_Persona = direccionDto.IdPersona,
+                callePrincipal = direccionDto.CallePrincipal,
+                calleSecundaria1 = direccionDto.CalleSecundaria1,
+                calleSecundaria2 = direccionDto.CalleSecundaria2,
+                numeroCasa = direccionDto.NumeroCasa,
+                referencia = direccionDto.Referencia
+            };
+            _context.PersonaDirecciones.Add(direccion);
+        }
+        else
+        {
+            // Actualizar dirección existente
+            direccion.callePrincipal = direccionDto.CallePrincipal;
+            direccion.calleSecundaria1 = direccionDto.CalleSecundaria1;
+            direccion.calleSecundaria2 = direccionDto.CalleSecundaria2;
+            direccion.numeroCasa = direccionDto.NumeroCasa;
+            direccion.referencia = direccionDto.Referencia;
+            _context.PersonaDirecciones.Update(direccion);
+        }
+
+        await _context.SaveChangesAsync();
+        return Ok(true);
     }
 
     private bool PersonaExists(int id)

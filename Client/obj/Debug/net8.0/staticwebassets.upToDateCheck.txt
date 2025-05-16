@@ -10,7 +10,17 @@ wwwroot\css\open-iconic\font\fonts\open-iconic.woff
 wwwroot\css\open-iconic\FONT-LICENSE
 wwwroot\css\open-iconic\ICON-LICENSE
 wwwroot\css\open-iconic\README.md
+wwwroot\css\tabcontainer.css
+wwwroot\css\tarjeta.css
 wwwroot\favicon.ico
 wwwroot\icon-192.png
+wwwroot\images\atencionmedica.png
+wwwroot\images\enfermeria.png
+wwwroot\images\estimulaciontemprana.png
+wwwroot\images\fisioterapia.png
 wwwroot\images\fondologin.jpg
+wwwroot\images\historiaclinica.png
+wwwroot\images\nutricion.png
+wwwroot\images\psicologia.png
+wwwroot\images\usuario.png
 wwwroot\index.html
